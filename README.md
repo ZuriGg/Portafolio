@@ -1,17 +1,28 @@
-# Portafolio
+# Portafolio smanzano.dev
 
 Para realizar el portafolio tengo los siguientes requisitos:
+
+(CADA SECCIÓN QUE PASE DE BREVE A EXTENDIDO SI ES CLICADO)
 
 -   Foto
 -   Nombre
 -   Habilidad principal (Full-stack web developer)
 -   Contacto (mail, linkedin, github)
 -   CV
+-   Sobre mí (Ver mas: aficiones, motivaciones, algo de mi personalidfad etc)
 -   Proyectos principales, otros proyectos
--   Habilidades técnicas, más habilidades
--   Experiencia laboral, roles desempeñados
+    (Pokeapi "Destacar busqueda indexada de pokemon")
+-   Habilidades técnicas, más habilidades (Frontend, Backend, Lenguajes, Bases de datos, Control de versiones)
+-   Habilidades blandas (Soft skills)
+-   Certificaciones
+-   Experiencia laboral, roles desempeñados (Tiempo estudiando, desarrollando proyectos personales, el portfolio)
 -   Formación especifica, más formaciones
--   Sobre mí
+
+Extras:
+
+-   tipografía
+-   fondos
+-
 
 ## Tareas pendientes
 
@@ -36,7 +47,7 @@ Para realizar el portafolio tengo los siguientes requisitos:
 
 -   HTML con accesibilidad (Descripciones en todo, descripción de página web)
 -   Etiquetas para SEO de la web (Por si acaso)
--
+-   PDF que te abra en una pagina el CV y de la opción a descargar
 -
 
 #### CSS
