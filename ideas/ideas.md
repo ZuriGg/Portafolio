@@ -13,8 +13,7 @@
 
 ### Backend
 
--   Crear api que traduzca en tiempo real y además hable para podre traducir mediante voz a un extrangero, y no solo eso si no que reciba instrucciones por voz
-    https://artprojectgroup.es/alternativa-gratuita-a-la-api-de-google-translate
+-   Crear api que traduzca en tiempo real y además hable para podre traducir mediante voz a un extrangero, y no solo eso si no que reciba instrucciones por voz (https://artprojectgroup.es/alternativa-gratuita-a-la-api-de-google-translate)
 
 ### Full-stack
 
