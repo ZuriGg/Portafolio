@@ -1,5 +1,11 @@
 # Ideas para proyectos:
 
+## Ejemplos de diseño:
+
+-   https://mattfarley.ca/
+-   https://olaolu.dev/
+-   https://www.onyedika.xyz/
+
 ## Proyectos viejos
 
 -   Mejorar pokeapi mucho
