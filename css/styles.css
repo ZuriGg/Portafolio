@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1vh;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    border: solid 5px green;
+}
+
+/* ------------------------ HEADER ------------------------ */
+
+body > header {
+    display: grid;
+    grid-template-areas:
+        "nav nav nav"
+        "perfil perfil nombre"
+        "perfil perfil desempeño"
+        "perfil perfil correo"
+        "logos nada nada";
+    width: 100%;
+    height: 20vh;
+    border: solid 5px black;
+    margin: auto;
+}
+
+body > header > nav {
+    grid-area: nav;
+    width: 100%;
+    height: 3vh;
+    border: solid 5px yellow;
+}
+
+body > header > nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+body > header > nav > ul > li {
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body > header > h1 {
+    grid-area: nombre;
+    font-size: 4rem;
+    margin: auto;
+    margin-right: 9%;
+}
+
+body > header > h2 {
+    grid-area: desempeño;
+    font-size: 2.5rem;
+    margin-right: 7%;
+}
+
+body > header > div#contactoContainer {
+    grid-area: correo;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7%;
+}
+
+body > header > div > p#correo {
+    font-size: 2rem;
+    border: solid 2px grey;
+    border-radius: 1.2rem;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-right: 0.3rem;
+}
+
+body > header > div > button#btnEnvCorreo {
+    width: 100%;
+    height: 2.5vh;
+    margin-right: 0.3rem;
+}
+
+body > header > div > button#btnCopiarEmail {
+    width: 100%;
+    height: 2.5vh;
+}
+
+body > header > img#imgPerfil {
+    grid-area: perfil;
+    width: 65%;
+    height: 11vh;
+    border-radius: 5vh;
+    margin: auto;
+}
+
+body > header > div#logosHeaderContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > header > div#logosHeaderContainer > img#imgCV {
+    width: 30%;
+    height: 4vh;
+}
+
+body > header > div#logosHeaderContainer > img#imgGitHubHeader {
+    width: 60%;
+    height: 7vh;
+}
+
+body > header > div#logosHeaderContainer > img#imgLinkedin {
+    width: 40%;
+    height: 6vh;
+}
+
+/* ------------------------ MAIN ------------------------ */
+
+body > main {
+    width: 100%;
+    border: solid 5px rgb(162, 0, 0);
+}
+
+/* ------------------------ FOOTER ------------------------ */
+
+body > footer {
+    width: 100%;
+    border: solid 5px rgb(34, 0, 255);
+}
