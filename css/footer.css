@@ -1,0 +1,4 @@
+body > footer {
+    width: 100%;
+    border: solid 5px rgb(34, 0, 255);
+}

@@ -4,7 +4,10 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Portafolio - Manzano, Sergio</title>
-        <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="/css/body.css" />
+        <link rel="stylesheet" href="/css/header.css" />
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="stylesheet" href="./css/footer.css" />
     </head>
     <body>
         <header>
@@ -24,36 +27,56 @@
                 </ul>
             </nav>
 
-            <h1>Sergio Manzano</h1>
+            <div id="headerContentContainer">
+                <h1>Sergio Manzano</h1>
 
-            <h2>Full-Stack Web Developer</h2>
+                <h2>Full-Stack Web Developer</h2>
 
-            <div id="contactoContainer">
-                <p id="correo">zurimanes@gmail.com</p>
+                <div id="contactoContainer">
+                    <p id="correo">zurimanes@gmail.com</p>
 
-                <button id="btnEnvCorreo">enviar</button>
+                    <button id="btnEnvCorreo">
+                        <img src="./img/enviar.png" alt="" srcset="" />
+                    </button>
 
-                <button id="btnCopiarEmail">copiar</button>
-            </div>
+                    <button id="btnCopiarEmail">
+                        <img src="./img/copiar.png" alt="" srcset="" />
+                    </button>
+                </div>
 
-            <img id="imgPerfil" src="./img/fotoPerfil.jpg" alt="" srcset="" />
-
-            <div id="logosHeaderContainer">
                 <img
-                    id="imgGitHubHeader"
-                    src="./img/gitHubLogo.png"
+                    id="imgPerfil"
+                    src="./img/fotoPerfil.jpg"
                     alt=""
                     srcset=""
                 />
 
-                <img
-                    id="imgLinkedin"
-                    src="./img/linkedinLogo.png"
-                    alt=""
-                    srcset=""
-                />
-
-                <img id="imgCV" src="./img/cvLogo.png" alt="" srcset="" />
+                <div id="logosHeaderContainer">
+                    <button>
+                        <img
+                            id="imgGitHubHeader"
+                            src="./img/gitHubLogo.png"
+                            alt=""
+                            srcset=""
+                        />
+                    </button>
+                    <button>
+                        <img
+                            id="imgLinkedin"
+                            src="./img/linkedinLogo.png"
+                            alt=""
+                            srcset=""
+                        />
+                    </button>
+                    <button>
+                        <img
+                            id="imgCV"
+                            src="./img/cvLogo.png"
+                            alt=""
+                            srcset=""
+                        />
+                    </button>
+                </div>
             </div>
         </header>
 
@@ -69,54 +92,77 @@
                 </p>
             </section>
             <section id="seccionProyectosDestacados">
-                <article>
-                    <h4>Nombre</h4>
-                    <img src="" alt="" srcset="" />
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Veniam sequi impedit ut quidem odit perferendis,
-                        sunt cumque necessitatibus laborum autem nobis corporis,
-                        dignissimos totam expedita, aut ex quisquam perspiciatis
-                        voluptatum.
-                    </p>
-                    <img src="./img/gitHubLogo.png" alt="" srcset="" />
-                    <h5>Tecnologías</h5>
-                    <img src="" alt="" srcset="" />
-                    <img src="" alt="" srcset="" />
-                    <img src="" alt="" srcset="" />
-                </article>
-                <article>
-                    <h4>Nombre</h4>
-                    <img src="" alt="" srcset="" />
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Veniam sequi impedit ut quidem odit perferendis,
-                        sunt cumque necessitatibus laborum autem nobis corporis,
-                        dignissimos totam expedita, aut ex quisquam perspiciatis
-                        voluptatum.
-                    </p>
-                    <img src="./img/gitHubLogo.png" alt="" srcset="" />
-                    <h5>Tecnologías</h5>
-                    <img src="" alt="" srcset="" />
-                    <img src="" alt="" srcset="" />
-                    <img src="" alt="" srcset="" />
-                </article>
-                <article>
-                    <h4>Nombre</h4>
-                    <img src="" alt="" srcset="" />
-                    <p>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Veniam sequi impedit ut quidem odit perferendis,
-                        sunt cumque necessitatibus laborum autem nobis corporis,
-                        dignissimos totam expedita, aut ex quisquam perspiciatis
-                        voluptatum.
-                    </p>
-                    <img src="./img/gitHubLogo.png" alt="" srcset="" />
-                    <h5>Tecnologías</h5>
-                    <img src="" alt="" srcset="" />
-                    <img src="" alt="" srcset="" />
-                    <img src="" alt="" srcset="" />
-                </article>
+                <h3>Proyectos destacados</h3>
+                <div>
+                    <article>
+                        <h4>Poke Api</h4>
+                        <img
+                            class="imgProyecto"
+                            src="./img/proyectoPokeApi.png"
+                            alt=""
+                            srcset=""
+                        />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Veniam sequi impedit ut quidem odit
+                            perferendis, sunt cumque necessitatibus laborum
+                            autem nobis corporis, dignissimos totam expedita,
+                            aut ex quisquam perspiciatis voluptatum.
+                        </p>
+                        <img
+                            class="imgGithub"
+                            src="./img/gitHubLogo.png"
+                            alt=""
+                            srcset=""
+                        />
+                        <h5>Tecnologías</h5>
+                        <img src="" alt="" srcset="" />
+                        <img src="" alt="" srcset="" />
+                        <img src="" alt="" srcset="" />
+                    </article>
+                    <article>
+                        <h4>Nombre</h4>
+                        <img src="" alt="" srcset="" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Veniam sequi impedit ut quidem odit
+                            perferendis, sunt cumque necessitatibus laborum
+                            autem nobis corporis, dignissimos totam expedita,
+                            aut ex quisquam perspiciatis voluptatum.
+                        </p>
+                        <img
+                            class="imgGithub"
+                            src="./img/gitHubLogo.png"
+                            alt=""
+                            srcset=""
+                        />
+                        <h5>Tecnologías</h5>
+                        <img src="" alt="" srcset="" />
+                        <img src="" alt="" srcset="" />
+                        <img src="" alt="" srcset="" />
+                    </article>
+                    <article>
+                        <h4>Nombre</h4>
+                        <img src="" alt="" srcset="" />
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Veniam sequi impedit ut quidem odit
+                            perferendis, sunt cumque necessitatibus laborum
+                            autem nobis corporis, dignissimos totam expedita,
+                            aut ex quisquam perspiciatis voluptatum.
+                        </p>
+                        <img
+                            class="imgGithub"
+                            src="./img/gitHubLogo.png"
+                            alt=""
+                            srcset=""
+                        />
+                        <h5>Tecnologías</h5>
+                        <img src="" alt="" srcset="" />
+                        <img src="" alt="" srcset="" />
+                        <img src="" alt="" srcset="" />
+                    </article>
+                </div>
             </section>
             <section id="seccionTecnologías">
                 <h3>Tecnologías</h3>

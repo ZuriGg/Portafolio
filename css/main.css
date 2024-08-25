@@ -1,0 +1,85 @@
+body > main {
+    width: 100%;
+    /*     border: solid 5px rgb(162, 0, 0); */
+}
+
+/* ------- SOBRE MI -------- */
+body > main > section#seccionSobreMi {
+    /*     border: solid 1px red; */
+    width: 80%;
+    margin: auto;
+}
+
+body > main > section#seccionSobreMi > h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+body > main > section#seccionSobreMi > p {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+/* -------- PROYECTOS -------- */
+body > main > section#seccionProyectosDestacados {
+    margin-top: 2rem;
+}
+
+body > main > section#seccionProyectosDestacados > h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+body > main > section#seccionProyectosDestacados > div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+}
+
+body > main > section#seccionProyectosDestacados > div > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px red;
+    border-radius: 2rem;
+    height: 40vh;
+    margin-bottom: 2rem;
+}
+
+body > main > section#seccionProyectosDestacados > div > article > h4 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+body
+    > main
+    > section#seccionProyectosDestacados
+    > div
+    > article
+    > img.imgProyecto {
+    width: 80%;
+    height: 20vh;
+    margin-bottom: 1rem;
+    border-radius: 2rem;
+}
+
+body > main > section#seccionProyectosDestacados > div > article > p {
+    width: 80%;
+    height: 10vh;
+    border: solid 1px red;
+    margin-bottom: 1rem;
+}
+
+body
+    > main
+    > section#seccionProyectosDestacados
+    > div
+    > article
+    > img.imgGithub {
+    height: 3rem;
+}
