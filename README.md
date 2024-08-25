@@ -24,6 +24,28 @@ Extras:
 -   fondos
 -
 
+## Idea de diseño
+
+### Idea movil
+
+-   Un fondo de cielo con cesped debajo
+
+-   Cuando deslizas hacia abajo se va moviendo el cielo hasta verse el cesped de debajo y si sigues se ve la tierra de debajo del cesped con raice sy todo
+
+#### Header
+
+-   Nube en el cielo
+
+#### Main
+
+-   Carteles de madera a lo viejo oeste unidos a un palo de madera a la izquierda que va desde arriba del todo hasta el suelo, y está clavado un poco sobre la tierra
+
+-   Cada sección estará dentro de un cartel con un tamaño minimo fijo, y maximo ya veremos
+
+#### Footer
+
+-   Un texto en una placa de soldado enterrada bajo tierra
+
 ## Tareas pendientes
 
 -   Diseñar organización de información de la web (Diseño principal en movil y en pc)
