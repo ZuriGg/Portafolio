@@ -121,7 +121,7 @@ header
 /* ------- IMAGEN DE PERFIL ------- */
 header > div#headerContentContainer > img#imgPerfil {
     grid-area: perfil;
-    width: 55%;
+    width: 50%;
     height: 8vh;
     border-radius: 3vh;
     margin-right: 5rem;

@@ -83,3 +83,36 @@ body
     > img.imgGithub {
     height: 3rem;
 }
+
+/* ------- TECNOLOGIAS ------- */
+
+body > main > section#seccionTecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+body > main > section#seccionTecnologias > h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+body > main > section#seccionTecnologias > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body > main > section#seccionTecnologias > div > button {
+    width: 8rem;
+    height: 8vh;
+    margin-bottom: 2rem;
+    border: none;
+    background: none;
+}
+
+body > main > section#seccionTecnologias > div > button > img {
+    width: 100%;
+    width: 100%;
+}
