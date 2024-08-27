@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 1vh;
+    font-size: 15px;
+}
+
+/* div#container0 {
+    display: flex;
+}
+
+div#container1 {
+    display: block;
+    background-color: rgb(136, 73, 0);
+    border: solid 1px rgb(136, 73, 0);
+    width: 15%;
+    height: 200vh;
+
+    margin-left: 10%;
+}
+
+div#container2 {
+    display: block;
+    background-color: rgb(110, 59, 0);
+    border: solid 1px rgb(110, 59, 0);
+    width: 2%;
+    height: 200vh;
+}
+
+div#container3 {
+    background-color: rgb(87, 47, 0);
+    border: solid 1px rgb(87, 47, 0);
+    width: 2%;
+    height: 200vh;
+} */
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #87ceeb; /* Color de fondo para simular el cielo */
+}
+
+.grass-container {
+    position: relative;
+    width: 500px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.blade {
+    width: 4px;
+    height: 100px;
+    background-color: #228b22; /* Color del césped */
+    transform-origin: bottom center;
+    animation: sway 3s ease-in-out infinite;
+}
+
+/* Aplicar diferentes alturas y tiempos de animación */
+.blade:nth-child(even) {
+    height: 2vh;
+    animation-duration: 2.5s;
+    animation-delay: -0.5s;
+}
+
+.blade:nth-child(odd) {
+    height: 3vh;
+    animation-duration: 3.5s;
+    animation-delay: -1s;
+}
+
+@keyframes sway {
+    0%,
+    100% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(15deg);
+    }
+}
