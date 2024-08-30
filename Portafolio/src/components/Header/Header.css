@@ -140,7 +140,7 @@ header div.headerContentContainer > img.imgPerfil {
     grid-area: perfil;
     width: 55%;
     height: 8vh;
-    border-radius: 3vh;
+    border-radius: 2vh;
     margin: auto;
 }
 

@@ -30,20 +30,15 @@ function Header({
                         <p className="correo">zurimanes@gmail.com</p>
 
                         <button className="btnEnvCorreo">
-                            <img src={imgEnviar} alt="" srcset="" />
+                            <img src={imgEnviar} alt="" />
                         </button>
 
                         <button className="btnCopiarEmail">
-                            <img src={imgCopiar} alt="" srcset="" />
+                            <img src={imgCopiar} alt="" />
                         </button>
                     </div>
 
-                    <img
-                        className="imgPerfil"
-                        src={imgPerfil}
-                        alt=""
-                        srcset=""
-                    />
+                    <img className="imgPerfil" src={imgPerfil} alt="" />
 
                     <div className="logosHeaderContainer">
                         <button>
@@ -51,7 +46,6 @@ function Header({
                                 className="imgGitHubHeader"
                                 src={imgGithub}
                                 alt=""
-                                srcset=""
                             />
                         </button>
                         <button>
@@ -59,16 +53,10 @@ function Header({
                                 className="imgLinkedin"
                                 src={imgLinkedin}
                                 alt=""
-                                srcset=""
                             />
                         </button>
                         <button>
-                            <img
-                                className="imgCV"
-                                src={imgCV}
-                                alt=""
-                                srcset=""
-                            />
+                            <img className="imgCV" src={imgCV} alt="" />
                         </button>
                     </div>
                 </div>

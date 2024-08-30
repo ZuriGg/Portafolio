@@ -1,0 +1,16 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    background-color: blanchedalmond;
+}
+
+footer > p {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+footer > p:last-child {
+    margin-bottom: 0;
+}

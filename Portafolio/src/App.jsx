@@ -1,7 +1,13 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Header/Header";
 
+//Home
+import Home from "./routes/Home";
+//Imagenes de Home
+import imgProyecto1 from "./assets/img/proyectoPokeApi.png";
+
+//Header
+import Header from "./components/Header/Header";
 //Imagenes de header
 import imgPerfil from "./assets/img/fotoPerfil.jpg";
 import imgEnviar from "./assets/img/enviar.png";
@@ -25,7 +31,14 @@ function App() {
                         imgCV={imgCV}
                     />
                 }
-            ></Route>
+            >
+                <Route index element={<Home imgProyecto1={imgProyecto1} />} />
+                <Route path="sobre-mi" element={<p>Mama</p>} />
+                <Route path="contacto" element={<p>MEME</p>} />
+                <Route path="proyectos" element={<p>MIMI</p>} />
+                <Route path="tecnologias" element={<p>MOMO</p>} />
+                <Route path="documentacion" element={<p>MUMU</p>} />
+            </Route>
         </Routes>
     );
 }

@@ -5,27 +5,27 @@ function Header({}) {
     return (
         <>
             <main>
-                <section id="seccionProyectosDestacados">
+                <section className="seccionProyectosDestacados">
                     <h3>Proyectos destacados</h3>
                     <div>
                         <article>
                             <h4>Poke Api</h4>
                             <img
-                                class="imgProyecto"
+                                className="imgProyecto"
                                 src="./img/proyectoPokeApi.png"
                                 alt=""
                                 srcset=""
                             />
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Veniam sequi impedit ut quidem
-                                odit perferendis, sunt cumque necessitatibus
-                                laborum autem nobis corporis, dignissimos totam
-                                expedita, aut ex quisquam perspiciatis
-                                voluptatum.
+                                adipisicing elit. Veniam sequi impedit ut
+                                quclassNameem odit perferendis, sunt cumque
+                                necessitatibus laborum autem nobis corporis,
+                                dignissimos totam expedita, aut ex quisquam
+                                perspiciatis voluptatum.
                             </p>
                             <img
-                                class="imgGithub"
+                                className="imgGithub"
                                 src="./img/gitHubLogo.png"
                                 alt=""
                                 srcset=""
@@ -37,17 +37,22 @@ function Header({}) {
                         </article>
                         <article>
                             <h4>Nombre</h4>
-                            <img class="imgProyecto" src="" alt="" srcset="" />
+                            <img
+                                className="imgProyecto"
+                                src=""
+                                alt=""
+                                srcset=""
+                            />
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Veniam sequi impedit ut quidem
-                                odit perferendis, sunt cumque necessitatibus
-                                laborum autem nobis corporis, dignissimos totam
-                                expedita, aut ex quisquam perspiciatis
-                                voluptatum.
+                                adipisicing elit. Veniam sequi impedit ut
+                                quclassNameem odit perferendis, sunt cumque
+                                necessitatibus laborum autem nobis corporis,
+                                dignissimos totam expedita, aut ex quisquam
+                                perspiciatis voluptatum.
                             </p>
                             <img
-                                class="imgGithub"
+                                className="imgGithub"
                                 src="./img/gitHubLogo.png"
                                 alt=""
                                 srcset=""
@@ -59,17 +64,22 @@ function Header({}) {
                         </article>
                         <article>
                             <h4>Nombre</h4>
-                            <img class="imgProyecto" src="" alt="" srcset="" />
+                            <img
+                                className="imgProyecto"
+                                src=""
+                                alt=""
+                                srcset=""
+                            />
                             <p>
                                 Lorem ipsum, dolor sit amet consectetur
-                                adipisicing elit. Veniam sequi impedit ut quidem
-                                odit perferendis, sunt cumque necessitatibus
-                                laborum autem nobis corporis, dignissimos totam
-                                expedita, aut ex quisquam perspiciatis
-                                voluptatum.
+                                adipisicing elit. Veniam sequi impedit ut
+                                quclassNameem odit perferendis, sunt cumque
+                                necessitatibus laborum autem nobis corporis,
+                                dignissimos totam expedita, aut ex quisquam
+                                perspiciatis voluptatum.
                             </p>
                             <img
-                                class="imgGithub"
+                                className="imgGithub"
                                 src="./img/gitHubLogo.png"
                                 alt=""
                                 srcset=""
@@ -81,7 +91,7 @@ function Header({}) {
                         </article>
                     </div>
                 </section>
-                <section id="seccionTecnologias">
+                <section className="seccionTecnologias">
                     <h3>Tecnologías</h3>
                     <div>
                         <button>
