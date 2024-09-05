@@ -27,13 +27,20 @@ function Header({
                         <h2>Full-Stack Web Developer</h2>
                     </Link>
                     <div className="contactoContainer">
-                        <p className="correo">zurimanes@gmail.com</p>
+                        <p className="correo">smanzanodev@gmail.com</p>
 
                         <button className="btnEnvCorreo">
                             <img src={imgEnviar} alt="" />
                         </button>
 
-                        <button className="btnCopiarEmail">
+                        <button
+                            onClick={() =>
+                                navigator.clipboard.writeText(
+                                    "smanzanodev@gmail.com"
+                                )
+                            }
+                            className="btnCopiarEmail"
+                        >
                             <img src={imgCopiar} alt="" />
                         </button>
                     </div>

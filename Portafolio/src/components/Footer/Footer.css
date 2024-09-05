@@ -9,6 +9,7 @@ footer {
 footer > p {
     font-size: 2rem;
     margin-bottom: 1rem;
+    background: none;
 }
 
 footer > p:last-child {

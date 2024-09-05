@@ -2,9 +2,10 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 //Home
-import Home from "./routes/Home";
+import Home from "./routes/Home/Home";
 //Imagenes de Home
 import imgProyecto1 from "./assets/img/proyectoPokeApi.png";
+import imgEjemplo from "./assets/img/imagenDeEjemplo.png";
 
 //Header
 import Header from "./components/Header/Header";
@@ -32,7 +33,18 @@ function App() {
                     />
                 }
             >
-                <Route index element={<Home imgProyecto1={imgProyecto1} />} />
+                <Route
+                    index
+                    element={
+                        <Home
+                            imgProyecto1={imgProyecto1}
+                            imgProyecto2={imgEjemplo}
+                            imgProyecto3={imgEjemplo}
+                            imgProyecto4={imgEjemplo}
+                            imgProyecto5={imgEjemplo}
+                        />
+                    }
+                />
                 <Route path="sobre-mi" element={<p>Mama</p>} />
                 <Route path="contacto" element={<p>MEME</p>} />
                 <Route path="proyectos" element={<p>MIMI</p>} />
