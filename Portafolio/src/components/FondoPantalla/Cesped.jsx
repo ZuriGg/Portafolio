@@ -39,7 +39,7 @@ function Cesped() {
 
     return (
         <div className="grass">
-            {[...Array(4)].map((_, idx) => (
+            {[...Array(6)].map((_, idx) => (
                 <div className={`grass-container grass${idx + 1}`} key={idx}>
                     {[...Array(briznasPorLinea)].map((_, bladeIdx) => (
                         <div className="blade" key={bladeIdx}></div>

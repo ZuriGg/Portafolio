@@ -1,23 +1,41 @@
 .grass {
+    position: relative;
     width: 100%;
     bottom: 0;
     z-index: 1;
     background-color: #13ff4e;
-    mask-image: linear-gradient(to top, #13ff4e 85%, transparent);
+    mask-image: linear-gradient(to top, #13ff4e 75%, transparent);
 }
 
 .grass-container {
-    position: relative;
+    position: relative; /* Mantener relativo para no sacarlo del flujo */
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     overflow: hidden;
-    mask-image: linear-gradient(to top, #13ff4e 65%, transparent);
+    margin-bottom: -15px; /* Superponer ligeramente las líneas */
+}
+
+/* Ajuste del z-index para cada línea */
+.grass1 {
+    z-index: 4;
+}
+
+.grass2 {
+    z-index: 3;
+}
+
+.grass3 {
+    z-index: 2;
+}
+
+.grass4 {
+    z-index: 1;
 }
 
 .blade {
-    width: 0.2vh;
+    width: 0.2vw;
     height: 100%;
     background-color: #228b22;
     transform-origin: bottom center;
@@ -32,4 +50,9 @@
     50% {
         transform: rotate(15deg);
     }
+}
+
+footer {
+    position: relative;
+    z-index: 5; /* El footer está encima del césped */
 }
