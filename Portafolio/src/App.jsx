@@ -7,7 +7,7 @@ import Cesped from "./components/FondoPantalla/Cesped.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
 //Imagenes
-import imgPerfil from "./assets/img/fotoPerfil.jpg";
+import imgPerfil from "./assets/img/fotoPerfil2.png";
 import imgEnviar from "./assets/img/enviar.png";
 import imgCopiar from "./assets/img/copiar.png";
 import imgGithub from "./assets/img/gitHubLogo.png";

@@ -11,6 +11,7 @@ header {
     /*     border: solid 5px black; */
     margin: auto;
     padding: 1rem;
+    padding-bottom: 5rem;
     border: none;
     background: linear-gradient(to bottom, white 80%, skyblue);
 }
@@ -82,8 +83,8 @@ header div.headerContentContainer > div.contactoContainer > p.correo {
     background-color: beige;
     color: black;
     border-radius: 1.2rem;
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-inline: 3%;
+    padding-block: 0.5%;
     margin-right: 0.3rem;
 }
 
