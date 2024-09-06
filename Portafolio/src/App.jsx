@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./components/Header/Header.jsx";
 import Home from "./routes/Home/Home.jsx";
 import Cesped from "./components/FondoPantalla/Cesped.jsx";
-import Footer from "./components/footer/Footer.jsx";
+import Footer from "./components/Footer/Footer.jsx";
 
 //Imagenes
 import imgPerfil from "./assets/img/fotoPerfil.jpg";
