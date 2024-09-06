@@ -3,7 +3,9 @@ footer {
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
-    background-color: blanchedalmond;
+    background: rgb(45, 27, 0);
+    border-top: solid 1rem rgb(0, 77, 0);
+    color: white;
 }
 
 footer > p {

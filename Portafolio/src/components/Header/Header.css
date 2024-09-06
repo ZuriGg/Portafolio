@@ -5,10 +5,13 @@ header {
         "content";
 
     width: 100%;
-    height: 20vh;
+    border: solid 1px rgb(0, 0, 0);
+
     /*     border: solid 5px black; */
     margin: auto;
     padding: 1rem;
+    border: none;
+    background: linear-gradient(to bottom, white 80%, skyblue);
 }
 
 /* ------- NAV ------- */
@@ -19,7 +22,6 @@ header nav {
     border: solid 1px rgb(0, 0, 0);
     border-radius: 1rem;
     padding: 1rem;
-    margin-bottom: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -138,10 +140,12 @@ header
 /* ------- IMAGEN DE PERFIL ------- */
 header div.headerContentContainer > img.imgPerfil {
     grid-area: perfil;
-    width: 55%;
+    width: 15vw;
     height: 8vh;
     border-radius: 2vh;
     margin: auto;
+
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
 /* ------- BOTONES SOCIAL MEDIA ------- */
