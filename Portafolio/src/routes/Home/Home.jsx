@@ -13,6 +13,7 @@ function Home({
     imgMySql,
     imgNode,
     imgReact,
+    imgGithub,
 }) {
     return (
         <>
@@ -36,6 +37,10 @@ function Home({
                     cumque necessitatibus laborum autem nobis corporis,
                     dignissimos totam expedita, aut ex quisquam perspiciatis
                     voluptatum."
+                    imgGithub={imgGithub}
+                    img1={imgHTML}
+                    img2={imgCSS}
+                    img3={imgJavaScript}
                 />
                 <Proyectos
                     imgProyecto1={imgProyecto2}
@@ -45,6 +50,10 @@ function Home({
                     cumque necessitatibus laborum autem nobis corporis,
                     dignissimos totam expedita, aut ex quisquam perspiciatis
                     voluptatum."
+                    imgGithub={imgGithub}
+                    img1={imgHTML}
+                    img2={imgCSS}
+                    img3={imgJavaScript}
                 />
                 <Proyectos
                     imgProyecto1={imgProyecto3}
@@ -54,6 +63,10 @@ function Home({
                     cumque necessitatibus laborum autem nobis corporis,
                     dignissimos totam expedita, aut ex quisquam perspiciatis
                     voluptatum."
+                    imgGithub={imgGithub}
+                    img1={imgHTML}
+                    img2={imgCSS}
+                    img3={imgJavaScript}
                 />
                 <Proyectos
                     imgProyecto1={imgProyecto4}
@@ -63,6 +76,10 @@ function Home({
                     cumque necessitatibus laborum autem nobis corporis,
                     dignissimos totam expedita, aut ex quisquam perspiciatis
                     voluptatum."
+                    imgGithub={imgGithub}
+                    img1={imgHTML}
+                    img2={imgCSS}
+                    img3={imgJavaScript}
                 />
                 <Proyectos
                     imgProyecto1={imgProyecto5}
@@ -72,6 +89,10 @@ function Home({
                     cumque necessitatibus laborum autem nobis corporis,
                     dignissimos totam expedita, aut ex quisquam perspiciatis
                     voluptatum."
+                    imgGithub={imgGithub}
+                    img1={imgHTML}
+                    img2={imgCSS}
+                    img3={imgJavaScript}
                 />
             </section>
             <section className="seccionTecnologias">

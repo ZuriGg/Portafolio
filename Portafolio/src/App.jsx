@@ -58,6 +58,7 @@ function App() {
                                 imgMySql={imgMySql}
                                 imgNode={imgNode}
                                 imgReact={imgReact}
+                                imgGithub={imgGithub}
                             />
                         }
                     />

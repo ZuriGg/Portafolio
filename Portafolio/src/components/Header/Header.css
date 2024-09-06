@@ -1,4 +1,5 @@
 header {
+    position: relative;
     display: grid;
     grid-template-areas:
         "nav"
@@ -29,7 +30,7 @@ header nav {
 }
 
 header a {
-    font-size: 1.5rem;
+    font-size: 1.3vh;
     text-decoration: none;
     list-style-type: none;
 }
@@ -44,26 +45,30 @@ header div.headerContentContainer {
         "logos correo correo";
     margin: auto;
     width: 80%;
+    margin-top: 1rem;
 }
 
 header div.headerContentContainer h1 {
     display: flex;
     align-items: flex-end;
     grid-area: nombre;
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin-bottom: 0.5vh;
     margin-top: 0.5vh;
     margin-left: 1.5vh;
+    width: 100%;
 }
 
 header div.headerContentContainer h2 {
     grid-area: desempeño;
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-left: 1.5vh;
+    width: 100%;
 }
 
 /* ------- CONTACTO ------- */
 header div.headerContentContainer > div.contactoContainer {
+    position: relative;
     grid-area: correo;
     display: flex;
     flex-direction: row;
@@ -72,7 +77,7 @@ header div.headerContentContainer > div.contactoContainer {
 }
 
 header div.headerContentContainer > div.contactoContainer > p.correo {
-    font-size: 1.8rem;
+    font-size: 1.4vh;
     border: solid 2px grey;
     background-color: beige;
     color: black;
@@ -86,8 +91,8 @@ header
     div.headerContentContainer
     > div.contactoContainer
     > button.btnEnvCorreo {
-    width: 10%;
-    height: 3vh;
+    width: 3vh;
+    aspect-ratio: 1/1;
     padding: 0;
     margin-right: 0.3rem;
     background: none;
@@ -114,8 +119,8 @@ header
     div.headerContentContainer
     > div.contactoContainer
     > button.btnCopiarEmail {
-    width: 10%;
-    height: 3vh;
+    width: 3vh;
+    aspect-ratio: 1/1;
     padding: 0;
     background: none;
     border: solid 1px grey;
@@ -140,8 +145,8 @@ header
 /* ------- IMAGEN DE PERFIL ------- */
 header div.headerContentContainer > img.imgPerfil {
     grid-area: perfil;
-    width: 15vw;
     height: 8vh;
+    aspect-ratio: 1/1;
     border-radius: 2vh;
     margin: auto;
 
@@ -163,7 +168,7 @@ header div.headerContentContainer > div.logosHeaderContainer {
 
 header div.headerContentContainer > div.logosHeaderContainer > button {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1/1;
     padding: 0;
     border: none;
     background: none;
@@ -184,7 +189,7 @@ header
     > button
     > img.imgCV {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1/1;
     margin: auto;
 }
 
@@ -204,6 +209,6 @@ header
     > button
     > img.imgLinkedin {
     width: 100%;
-    height: 100%;
+    aspect-ratio: 1/1;
     margin: auto;
 }

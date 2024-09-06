@@ -1,6 +1,14 @@
 import React from "react";
 
-function Proyectos({ imgProyecto1, nombre, descripcion }) {
+function Proyectos({
+    imgProyecto1,
+    nombre,
+    descripcion,
+    img1,
+    img2,
+    img3,
+    imgGithub,
+}) {
     return (
         <div>
             <article>
@@ -12,18 +20,25 @@ function Proyectos({ imgProyecto1, nombre, descripcion }) {
                     srcSet=""
                 />
                 <p>
-                    <strong>Descripción de proyecto:</strong> {descripcion}
+                    <span>Descripción de proyecto:</span> {descripcion}
                 </p>
-                <img
-                    className="imgGithub"
-                    src="./img/gitHubLogo.png"
-                    alt=""
-                    srcSet=""
-                />
-                <h5>Tecnologías</h5>
-                <img src="" alt="" srcSet="" />
-                <img src="" alt="" srcSet="" />
-                <img src="" alt="" srcSet="" />
+                <div>
+                    <h5>Tecnologías</h5>
+                    <div className="containerLogosProyectos">
+                        <img className="imgLogos" src={img1} alt="" srcSet="" />
+                        <img className="imgLogos" src={img2} alt="" srcSet="" />
+                        <img className="imgLogos" src={img3} alt="" srcSet="" />
+                    </div>
+                    <div className="containerGithubProyectos">
+                        {" "}
+                        <img
+                            className="imgGithub"
+                            src={imgGithub}
+                            alt=""
+                            srcSet=""
+                        />
+                    </div>
+                </div>
             </article>
         </div>
     );
