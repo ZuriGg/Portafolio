@@ -1,27 +1,47 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import "./Cesped.css";
 
 function Cesped() {
+    const [briznasPorLinea, setBriznasPorLinea] = useState(0);
+    const densidadBriznas = 10;
+
+    const calcularBriznasPorLinea = () => {
+        const anchoPantalla = window.innerWidth;
+        const cantidadBriznas = Math.floor(
+            (anchoPantalla / 30) * densidadBriznas
+        );
+        setBriznasPorLinea(cantidadBriznas);
+    };
+
+    useEffect(() => {
+        calcularBriznasPorLinea();
+
+        window.addEventListener("resize", calcularBriznasPorLinea);
+
+        return () => {
+            window.removeEventListener("resize", calcularBriznasPorLinea);
+        };
+    }, []);
+
     useEffect(() => {
         const briznas = document.querySelectorAll(".blade");
 
         briznas.forEach((brizna) => {
             const delayAleatorio = Math.random() * 2;
             const duracionAleatoria = 2.5 + Math.random() * 1.5;
-            const alturaAleatoria = 2 + Math.random() * 1;
+            const alturaAleatoria = 3 + Math.random() * 0.5;
 
             brizna.style.animationDelay = `${delayAleatorio}s`;
             brizna.style.animationDuration = `${duracionAleatoria}s`;
             brizna.style.height = `${alturaAleatoria}vh`;
         });
-    }, []); // El array vacío hace que se ejecute solo una vez al montar el componente
+    }, [briznasPorLinea]);
 
     return (
         <div className="grass">
-            {/* Puedes reducir la duplicación de código con un pequeño bucle si lo prefieres */}
             {[...Array(4)].map((_, idx) => (
                 <div className={`grass-container grass${idx + 1}`} key={idx}>
-                    {[...Array(100)].map((_, bladeIdx) => (
+                    {[...Array(briznasPorLinea)].map((_, bladeIdx) => (
                         <div className="blade" key={bladeIdx}></div>
                     ))}
                 </div>

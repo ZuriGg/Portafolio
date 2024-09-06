@@ -3,7 +3,7 @@
     bottom: 0;
     z-index: 1;
     background-color: #13ff4e;
-    mask-image: linear-gradient(to top, #13ff4e 75%, transparent);
+    mask-image: linear-gradient(to top, #13ff4e 85%, transparent);
 }
 
 .grass-container {
@@ -13,10 +13,11 @@
     justify-content: space-around;
     align-items: flex-end;
     overflow: hidden;
+    mask-image: linear-gradient(to top, #13ff4e 65%, transparent);
 }
 
 .blade {
-    width: 0.2vw;
+    width: 0.2vh;
     height: 100%;
     background-color: #228b22;
     transform-origin: bottom center;
