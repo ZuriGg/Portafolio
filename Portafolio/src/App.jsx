@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
-import Header from "./components/Header/Header";
+import Header from "./components/Header/Header.jsx";
 import Home from "./routes/Home/Home.jsx";
-import Cesped from "./components/FondoPantalla/Cesped";
-import Footer from "./components/footer/Footer";
+import Cesped from "./components/FondoPantalla/Cesped.jsx";
+import Footer from "./components/footer/Footer.jsx";
 
 //Imagenes
 import imgPerfil from "./assets/img/fotoPerfil.jpg";
