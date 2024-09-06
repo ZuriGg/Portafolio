@@ -4,20 +4,19 @@
     bottom: 0;
     z-index: 1;
     background-color: #13ff4e;
-    mask-image: linear-gradient(to top, #13ff4e 75%, transparent);
+    mask-image: linear-gradient(to top, #13ff4e 80%, transparent);
 }
 
 .grass-container {
-    position: relative; /* Mantener relativo para no sacarlo del flujo */
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     overflow: hidden;
-    margin-bottom: -15px; /* Superponer ligeramente las líneas */
+    margin-bottom: -20px;
 }
 
-/* Ajuste del z-index para cada línea */
 .grass1 {
     z-index: 4;
 }
@@ -35,7 +34,7 @@
 }
 
 .blade {
-    width: 0.2vw;
+    width: 0.1vw;
     height: 100%;
     background-color: #228b22;
     transform-origin: bottom center;

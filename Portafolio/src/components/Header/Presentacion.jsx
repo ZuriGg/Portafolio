@@ -12,9 +12,11 @@ function Presentacion({
     return (
         <div className="headerContentContainer">
             <Link to="/">
-                <h1>Sergio Manzano</h1>
+                <div className="nombreContainer">
+                    <h1>Sergio Manzano</h1>
 
-                <h2>Full-Stack Web Developer</h2>
+                    <h2>Full-Stack Web Developer</h2>
+                </div>
             </Link>
             <div className="contactoContainer">
                 <p className="correo">smanzanodev@gmail.com</p>
@@ -37,13 +39,13 @@ function Presentacion({
 
             <div className="logosHeaderContainer">
                 <button>
-                    <img className="imgGitHubHeader" src={imgGithub} alt="" />
+                    <img className="imgLogoHeader" src={imgGithub} alt="" />
                 </button>
                 <button>
-                    <img className="imgLinkedin" src={imgLinkedin} alt="" />
+                    <img className="imgLogoHeader" src={imgLinkedin} alt="" />
                 </button>
                 <button>
-                    <img className="imgCV" src={imgCV} alt="" />
+                    <img className="imgLogoHeader" src={imgCV} alt="" />
                 </button>
             </div>
         </div>

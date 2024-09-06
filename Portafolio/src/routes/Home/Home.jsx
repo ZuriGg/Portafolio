@@ -97,7 +97,7 @@ function Home({
             </section>
             <section className="seccionTecnologias">
                 <h3>Tecnologías</h3>
-                <div>
+                <div className="seccionBtnTec">
                     <button>
                         <img src={imgHTML} alt="" />
                     </button>

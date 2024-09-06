@@ -4,14 +4,11 @@ header {
     grid-template-areas:
         "nav"
         "content";
-
     width: 100%;
     border: solid 1px rgb(0, 0, 0);
-
-    /*     border: solid 5px black; */
     margin: auto;
     padding: 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
     border: none;
     background: linear-gradient(to bottom, white 80%, skyblue);
 }
@@ -28,10 +25,11 @@ header nav {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 header a {
-    font-size: 1.3vh;
+    font-size: 3vw;
     text-decoration: none;
     list-style-type: none;
 }
@@ -42,29 +40,43 @@ header div.headerContentContainer {
     display: grid;
     grid-template-areas:
         "perfil nombre nombre"
-        "perfil desempeño desempeño"
+        "perfil nombre nombre"
         "logos correo correo";
     margin: auto;
-    width: 80%;
     margin-top: 1rem;
+}
+
+header > div.headerContentContainer > a {
+    grid-area: nombre;
+}
+
+header > div.headerContentContainer > a > div.nombreContainer {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 header div.headerContentContainer h1 {
     display: flex;
     align-items: flex-end;
-    grid-area: nombre;
-    font-size: 2.6rem;
-    margin-bottom: 0.5vh;
+    font-size: 6vw;
+    margin-bottom: 1vh;
     margin-top: 0.5vh;
-    margin-left: 1.5vh;
+    margin-left: 4vh;
     width: 100%;
+    white-space: nowrap;
+    line-height: 1.1;
 }
 
 header div.headerContentContainer h2 {
-    grid-area: desempeño;
-    font-size: 1.6rem;
-    margin-left: 1.5vh;
+    font-size: 3.5vw;
     width: 100%;
+    margin-left: 4vh;
+
+    white-space: nowrap;
 }
 
 /* ------- CONTACTO ------- */
@@ -75,10 +87,11 @@ header div.headerContentContainer > div.contactoContainer {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-right: auto;
 }
 
 header div.headerContentContainer > div.contactoContainer > p.correo {
-    font-size: 1.4vh;
+    font-size: 2.5vw;
     border: solid 2px grey;
     background-color: beige;
     color: black;
@@ -86,22 +99,24 @@ header div.headerContentContainer > div.contactoContainer > p.correo {
     padding-inline: 3%;
     padding-block: 0.5%;
     margin-right: 0.3rem;
+    margin-left: 2vh;
 }
 
 header
     div.headerContentContainer
     > div.contactoContainer
     > button.btnEnvCorreo {
-    width: 3vh;
+    width: 6vw;
     aspect-ratio: 1/1;
     padding: 0;
-    margin-right: 0.3rem;
     background: none;
-    border: solid 1px grey;
+    border: none;
     border-radius: 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 0.8rem;
+    margin-left: 0.4rem;
 }
 
 header
@@ -110,21 +125,19 @@ header
     > button.btnEnvCorreo
     > img {
     width: 100%;
-    height: 80%;
+    height: 100%;
     padding: 0;
-    margin-right: 0.1rem;
-    margin-left: 0.1rem;
 }
 
 header
     div.headerContentContainer
     > div.contactoContainer
     > button.btnCopiarEmail {
-    width: 3vh;
+    width: 6vw;
     aspect-ratio: 1/1;
     padding: 0;
     background: none;
-    border: solid 1px grey;
+    border: none;
     border-radius: 0.7rem;
     display: flex;
     justify-content: center;
@@ -138,19 +151,16 @@ header
     > img {
     padding: 0;
     width: 100%;
-    height: 70%;
-    margin-right: 0.4rem;
-    margin-left: 0.4rem;
+    height: 100%;
 }
 
 /* ------- IMAGEN DE PERFIL ------- */
 header div.headerContentContainer > img.imgPerfil {
     grid-area: perfil;
-    height: 8vh;
+    width: 18vw;
     aspect-ratio: 1/1;
     border-radius: 2vh;
     margin: auto;
-
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
 }
 
@@ -161,9 +171,7 @@ header div.headerContentContainer > div.logosHeaderContainer {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 2rem;
     margin-top: 1rem;
-    height: 4vh;
     width: 100%;
 }
 
@@ -188,28 +196,8 @@ header
     div.headerContentContainer
     > div.logosHeaderContainer
     > button
-    > img.imgCV {
-    width: 100%;
-    aspect-ratio: 1/1;
-    margin: auto;
-}
-
-header
-    div.headerContentContainer
-    > div.logosHeaderContainer
-    > button
-    > img.imgGitHubHeader {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-}
-
-header
-    div.headerContentContainer
-    > div.logosHeaderContainer
-    > button
-    > img.imgLinkedin {
-    width: 100%;
+    > img.imgLogoHeader {
+    height: 4vh;
     aspect-ratio: 1/1;
     margin: auto;
 }

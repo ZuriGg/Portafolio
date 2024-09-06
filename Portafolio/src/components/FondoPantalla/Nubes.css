@@ -17,7 +17,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     z-index: 3;
-    animation: moverNube linear infinite;
+    animation: moverNube ease-in-out infinite;
 }
 
 @keyframes moverNube {
