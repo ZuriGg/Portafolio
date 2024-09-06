@@ -82,7 +82,7 @@ function Nubes() {
                             (index * alturaNube) % (altura + alturaNube)
                         }px`, // Posición vertical de la nube
                         left: `${Math.random() * 100}%`, // Posición horizontal aleatoria
-                        animationDuration: `${20 + Math.random() * 60}s`, // Duración de la animación aleatoria
+                        animationDuration: `${10 + Math.random() * 60}s`, // Duración de la animación aleatoria
                     }}
                 ></div>
             ))}
