@@ -24,4 +24,9 @@ body {
 button {
     cursor: pointer;
     transition: border-color 0.25s;
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    -webkit-tap-highlight-color: transparent;
 }
