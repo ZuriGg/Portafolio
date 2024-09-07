@@ -12,7 +12,7 @@ function Presentacion({
     return (
         <div className="headerContentContainer">
             <Link to="/">
-                <div className="nombreContainer">
+                <div className="nombreContainer" data-text="Sergio Manzano">
                     <h1>Sergio Manzano</h1>
 
                     <h2>Full-Stack Web Developer</h2>

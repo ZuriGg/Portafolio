@@ -4,41 +4,6 @@ main {
     border: none;
 }
 
-/* ------- SOBRE MI -------- */
-
-main > div.contenedorSobreMi {
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    width: 80%;
-    height: 20vh;
-    margin: auto;
-    background-image: url("../../assets/img/cartel.png");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background: solid red 2px;
-    border: solid green 2px;
-    color: rgb(109, 0, 0);
-}
-
-main > div.contenedorSobreMi > section.seccionSobreMi {
-    width: 80%;
-}
-
-main > div.contenedorSobreMi > section.seccionSobreMi > h3 {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-}
-
-main > div.contenedorSobreMi > section.seccionSobreMi > p {
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-}
-
 /* -------- PROYECTOS -------- */
 main > section.seccionProyectosDestacados {
     margin-top: 2rem;

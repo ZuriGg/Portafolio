@@ -28,6 +28,11 @@ header nav {
     margin-bottom: 1rem;
 }
 
+header nav a {
+    color: #000000;
+    font-weight: bold;
+}
+
 header a {
     font-size: 3vw;
     text-decoration: none;
@@ -47,6 +52,7 @@ header div.headerContentContainer {
 }
 
 header > div.headerContentContainer > a {
+    position: relative;
     grid-area: nombre;
 }
 
@@ -57,26 +63,42 @@ header > div.headerContentContainer > a > div.nombreContainer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    color: #c8d2da;
 }
 
 header div.headerContentContainer h1 {
     display: flex;
     align-items: flex-end;
-    font-size: 6vw;
+    font-size: 7vw;
     margin-bottom: 1vh;
     margin-top: 0.5vh;
     margin-left: 4vh;
     width: 100%;
     white-space: nowrap;
     line-height: 1.1;
+    transition: all 0.8s;
+    font-weight: bold;
+}
+
+header div.headerContentContainer h1:hover {
+    text-shadow: 0 1px 0 #b4c1cd, 0 2px 0 #a0b1bf, 0 3px 0 #8ca0b2,
+        0 4px 0 #778fa4, 3px 5px 15px rgba(0, 0, 0, 0.1),
+        3px 6px 5px rgba(0, 0, 0, 0.3);
 }
 
 header div.headerContentContainer h2 {
-    font-size: 3.5vw;
+    font-size: 4vw;
     width: 100%;
     margin-left: 4vh;
-
+    transition: all 0.8s;
+    font-weight: bold;
     white-space: nowrap;
+}
+
+header div.headerContentContainer h2:hover {
+    text-shadow: 0 1px 0 #b4c1cd, 0 2px 0 #a0b1bf, 0 3px 0 #8ca0b2,
+        0 4px 0 #778fa4, 3px 5px 15px rgba(0, 0, 0, 0.1),
+        3px 6px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* ------- CONTACTO ------- */
@@ -100,23 +122,27 @@ header div.headerContentContainer > div.contactoContainer > p.correo {
     padding-block: 0.5%;
     margin-right: 0.3rem;
     margin-left: 2vh;
+    transition: all 0.3s;
+    font-weight: bold;
+}
+
+header div.headerContentContainer > div.contactoContainer > p.correo:hover {
+    text-shadow: 1px 1px 0 red, 2px 2px 0 green, 3px 3px 0 blue,
+        4px 4px 0 yellow, 5px 5px 0 violet, 6px 6px 0 black;
 }
 
 header
     div.headerContentContainer
     > div.contactoContainer
     > button.btnEnvCorreo {
-    width: 6vw;
-    aspect-ratio: 1/1;
-    padding: 0;
+    width: 8vw;
+    aspect-ratio: 3/2;
     background: none;
     border: none;
     border-radius: 0.7rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 0.8rem;
-    margin-left: 0.4rem;
 }
 
 header
@@ -126,7 +152,7 @@ header
     > img {
     width: 100%;
     height: 100%;
-    padding: 0;
+    padding: 0.4vw;
 }
 
 header
@@ -135,7 +161,7 @@ header
     > button.btnCopiarEmail {
     width: 6vw;
     aspect-ratio: 1/1;
-    padding: 0;
+
     background: none;
     border: none;
     border-radius: 0.7rem;
@@ -149,7 +175,8 @@ header
     > div.contactoContainer
     > button.btnCopiarEmail
     > img {
-    padding: 0;
+    padding: 0.4vw;
+
     width: 100%;
     height: 100%;
 }
@@ -161,7 +188,7 @@ header div.headerContentContainer > img.imgPerfil {
     aspect-ratio: 1/1;
     border-radius: 2vh;
     margin: auto;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* ------- BOTONES SOCIAL MEDIA ------- */
@@ -197,7 +224,7 @@ header
     > div.logosHeaderContainer
     > button
     > img.imgLogoHeader {
-    height: 4vh;
+    height: 6.5vw;
     aspect-ratio: 1/1;
     margin: auto;
 }

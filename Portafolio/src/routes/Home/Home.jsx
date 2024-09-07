@@ -1,5 +1,6 @@
 import "./Home.css";
 import Proyectos from "../../components/Proyectos";
+import SobreMiRedux from "../../components/Main/SobreMiRedux";
 
 function Home({
     imgProyecto1,
@@ -17,16 +18,7 @@ function Home({
 }) {
     return (
         <>
-            <div className="contenedorSobreMi">
-                <section className="seccionSobreMi">
-                    <h3>Sobre mi</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing
-                        elit. Delectus deleniti maiores quas consequuntur
-                        nostrum ea adipisci
-                    </p>
-                </section>
-            </div>
+            <SobreMiRedux />
             <section className="seccionProyectosDestacados">
                 <h3>Proyectos destacados</h3>
                 <Proyectos

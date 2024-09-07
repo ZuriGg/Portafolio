@@ -62,8 +62,8 @@ function App() {
                             />
                         }
                     />
-                    <Route path="sobre-mi" element={<p>Mama</p>} />
                     <Route path="contacto" element={<p>MEME</p>} />
+                    <Route path="sobre-mi" element={<p>Mama</p>} />
                     <Route path="proyectos" element={<p>MIMI</p>} />
                     <Route path="tecnologias" element={<p>MOMO</p>} />
                     <Route path="documentacion" element={<p>MUMU</p>} />

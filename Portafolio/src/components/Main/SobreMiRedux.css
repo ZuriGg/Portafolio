@@ -1,0 +1,35 @@
+div.contenedorSobreMi {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 20vh;
+    margin: auto;
+    background-image: url("../../assets/img/cartel.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffe9d1;
+}
+
+div.contenedorSobreMi > section.seccionSobreMi {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 88%;
+    height: 83%;
+    border-radius: 7%;
+    padding: 2%;
+    text-shadow: 2px 3px 3px rgb(0, 0, 0);
+}
+
+div.contenedorSobreMi > section.seccionSobreMi > h3 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+div.contenedorSobreMi > section.seccionSobreMi > p {
+    font-size: 4vw;
+}

@@ -7,7 +7,7 @@
 
     line-height: 1.5;
     font-weight: 400;
-    background-color: none;
+    background-color: skyblue;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -24,9 +24,4 @@ body {
 button {
     cursor: pointer;
     transition: border-color 0.25s;
-}
-
-button:focus,
-button:focus-visible {
-    outline: 4px auto blue;
 }

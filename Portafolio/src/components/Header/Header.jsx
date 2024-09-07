@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from "react-router-dom";
 import "./Header.css";
-import Presentacion from "./Presentacion.jsx";
+import NombreIntro from "./NombreIntro.jsx";
 
 function Header({
     imgPerfil,
@@ -15,13 +15,13 @@ function Header({
             <header>
                 <nav>
                     <NavLink to="/">Home</NavLink>
-                    <NavLink to="/sobre-mi">Sobre mí</NavLink>
                     <NavLink to="/contacto">Contacto</NavLink>
+                    <NavLink to="/sobre-mi">Sobre mí</NavLink>
                     <NavLink to="/proyectos">Proyectos</NavLink>
                     <NavLink to="/tecnologias">Tecnologías</NavLink>
                     <NavLink to="/documentacion">Documentación</NavLink>
                 </nav>
-                <Presentacion
+                <NombreIntro
                     imgPerfil={imgPerfil}
                     imgEnviar={imgEnviar}
                     imgCopiar={imgCopiar}
