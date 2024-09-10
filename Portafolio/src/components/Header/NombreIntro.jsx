@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-function Presentacion({
+function NombreIntro({
     imgPerfil,
     imgEnviar,
     imgCopiar,
@@ -9,6 +9,11 @@ function Presentacion({
     imgLinkedin,
     imgCV,
 }) {
+    const handleClick = () => {
+        const mailtoLink = "mailto:smanzanodev@gmail.com";
+        window.location.href = mailtoLink;
+    };
+
     return (
         <div className="headerContentContainer">
             <Link to="/">
@@ -21,7 +26,7 @@ function Presentacion({
             <div className="contactoContainer">
                 <p className="correo">smanzanodev@gmail.com</p>
 
-                <button className="btnEnvCorreo">
+                <button onClick={handleClick} className="btnEnvCorreo">
                     <img src={imgEnviar} alt="" />
                 </button>
 
@@ -52,4 +57,4 @@ function Presentacion({
     );
 }
 
-export default Presentacion;
+export default NombreIntro;

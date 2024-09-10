@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useState } from "react";
 import "./Proyectos.css";
 
 function Proyectos({
@@ -10,12 +10,28 @@ function Proyectos({
     img3,
     imgGithub,
 }) {
+    const [isScaled, setIsScaled] = useState(false);
+    const hoverTimeout = useRef(null);
+
+    const handleMouseEnter = () => {
+        hoverTimeout.current = setTimeout(() => {
+            setIsScaled(true);
+        }, 400);
+    };
+
+    const handleMouseLeave = () => {
+        clearTimeout(hoverTimeout.current);
+        setIsScaled(false);
+    };
+
     return (
         <div>
             <article>
                 <h4>{nombre}</h4>
                 <img
-                    className="imgProyecto"
+                    className={`button ${isScaled ? "scale-up" : ""}`}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}
                     src={imgProyecto1}
                     alt=""
                     srcSet=""

@@ -4,7 +4,7 @@ div.contenedorSobreMi {
     justify-content: center;
     align-items: center;
     width: 95%;
-    height: 30vh;
+    aspect-ratio: 7/4;
     margin: auto;
     background-image: url("../../assets/img/nubePrincipal.png");
     background-size: contain;
@@ -17,10 +17,9 @@ div.contenedorSobreMi > section.seccionSobreMi {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 75%;
-    height: 83%;
+    width: 80%;
     border-radius: 7%;
-    padding: 4%;
+    padding: 5%;
     color: #7d7d7d;
     font-weight: bold;
 }

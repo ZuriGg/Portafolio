@@ -1,4 +1,8 @@
 section.seccionProyectosDestacados {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 2rem;
     z-index: 1;
     width: min(800px, 100%);
@@ -8,7 +12,9 @@ section.seccionProyectosDestacados {
 section.seccionProyectosDestacados > h3 {
     display: flex;
     justify-content: center;
-    font-size: 6vw;
+    align-items: center;
+    width: 100%;
+    font-size: clamp(1rem, 6vw, 8rem);
     margin-bottom: 1vh;
 }
 section.seccionProyectosDestacados > div {
@@ -25,7 +31,7 @@ section.seccionProyectosDestacados > div > article {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(212, 255, 198, 0.54);
+    background-color: rgba(212, 255, 198, 0.329);
     border-radius: 2rem;
     height: 100%;
     width: 100%;
@@ -39,12 +45,21 @@ section.seccionProyectosDestacados > div > article > h4 {
     margin-bottom: 1vh;
 }
 
-section.seccionProyectosDestacados > div > article > img.imgProyecto {
+section.seccionProyectosDestacados > div > article > img {
     width: 90%;
     aspect-ratio: 2/1;
     margin-left: auto;
     margin-right: auto;
     border-radius: 2rem;
+    transition: all 0.2s;
+}
+
+section.seccionProyectosDestacados > div > article > img:hover {
+    cursor: pointer;
+}
+
+section.seccionProyectosDestacados > div > article > img.scale-up {
+    transform: scale(1.2);
 }
 
 section.seccionProyectosDestacados > div > article > p {

@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes } from "react-router-dom";
 import "./App.css";
 
 import Header from "./components/Header/Header.jsx";
@@ -67,6 +67,8 @@ function App() {
                     <Route path="proyectos" element={<p>MIMI</p>} />
                     <Route path="tecnologias" element={<p>MOMO</p>} />
                     <Route path="documentacion" element={<p>MUMU</p>} />
+
+                    <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
                 <Nubes imgNube={imgNube} />
                 <Cesped />
