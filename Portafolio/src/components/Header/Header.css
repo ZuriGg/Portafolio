@@ -4,7 +4,9 @@ header {
     grid-template-areas:
         "nav"
         "content";
+    grid-template-rows: 1fr 5fr;
     width: 100%;
+    aspect-ratio: 4/1;
     margin: auto;
     padding: 1rem;
     padding-bottom: 8rem;
@@ -15,14 +17,12 @@ header {
 header nav {
     grid-area: nav;
     width: 100%;
-    height: 4vh;
+    height: fit-content;
     border-radius: 1rem;
     padding: 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
-    margin-bottom: 2vw;
 }
 
 header a {
@@ -34,7 +34,7 @@ header nav a {
     color: #bdcedc;
     text-shadow: 0 1px 0 #b4c1cd, 0 1.5px 0 #a0b1bf, 0 2px 0 #8ca0b2,
         3px 5px 5px rgba(0, 0, 0, 0.3);
-    font-size: 3vw;
+    font-size: 1.5vh;
 }
 
 header nav a:hover {
@@ -46,9 +46,8 @@ header nav a.active {
     border-top: #00000000;
     border-left: #00000000;
     border-right: #00000000;
-    text-shadow: 0 1px 0 #b4c1cd, 0 1.5px 0 #a0b1bf, 0 2px 0 #8ca0b2,
-        0 2.5px 0 #778fa4, 3px 4px 15px rgba(0, 0, 0, 0.1),
-        3px 5px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 0 #b4c1cd, 0 1.5px 0 #a0b1bf, 0 px 0 #8ca0b2,
+        2px 4px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* ------- CONTENIDO ------- */
@@ -60,7 +59,7 @@ header div.headerContentContainer {
         "perfil nombre nombre"
         "logos correo correo";
     margin: auto;
-    margin-top: 1rem;
+    margin-top: 1vh;
 }
 
 header > div.headerContentContainer > a {
@@ -200,8 +199,7 @@ header div.headerContentContainer > img.imgPerfil {
 }
 
 header div.headerContentContainer > img.imgPerfil:hover {
-    width: 25vw;
-    position: absolute;
+    transform: scale(1.5);
     z-index: 1;
 }
 

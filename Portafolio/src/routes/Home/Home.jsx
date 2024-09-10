@@ -1,6 +1,7 @@
 import "./Home.css";
-import Proyectos from "../../components/Proyectos";
-import SobreMiRedux from "../../components/Main/SobreMiRedux";
+import Proyectos from "../../components/Main/Proyectos.jsx";
+import SobreMiRedux from "../../components/Main/SobreMiRedux.jsx";
+import Tecnologias from "../../components/Main/Tecnologias.jsx";
 
 function Home({
     imgProyecto1,
@@ -87,29 +88,14 @@ function Home({
                     img3={imgJavaScript}
                 />
             </section>
-            <section className="seccionTecnologias">
-                <h3>Tecnologías</h3>
-                <div className="seccionBtnTec">
-                    <button>
-                        <img src={imgHTML} alt="" />
-                    </button>
-                    <button>
-                        <img src={imgCSS} alt="" />
-                    </button>
-                    <button>
-                        <img src={imgJavaScript} alt="" />
-                    </button>
-                    <button>
-                        <img src={imgMySql} alt="" />
-                    </button>
-                    <button>
-                        <img src={imgNode} alt="" />
-                    </button>
-                    <button>
-                        <img src={imgReact} alt="" />
-                    </button>
-                </div>
-            </section>
+            <Tecnologias
+                imgMySql={imgMySql}
+                imgNode={imgNode}
+                imgReact={imgReact}
+                imgHTML={imgHTML}
+                imgCSS={imgCSS}
+                imgJavaScript={imgJavaScript}
+            />
         </>
     );
 }
