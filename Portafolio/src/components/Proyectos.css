@@ -1,0 +1,126 @@
+section.seccionProyectosDestacados {
+    margin-top: 2rem;
+    z-index: 1;
+}
+
+section.seccionProyectosDestacados > h3 {
+    display: flex;
+    justify-content: center;
+    font-size: 6vw;
+    margin-bottom: 1rem;
+}
+section.seccionProyectosDestacados > div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    aspect-ratio: 14/16;
+}
+
+section.seccionProyectosDestacados > div > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(212, 255, 198, 0.54);
+    border-radius: 2rem;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+section.seccionProyectosDestacados > div > article > h4 {
+    font-size: 4.5vw;
+}
+
+section.seccionProyectosDestacados > div > article > img.imgProyecto {
+    width: 90%;
+    aspect-ratio: 2/1;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2rem;
+}
+
+section.seccionProyectosDestacados > div > article > p {
+    width: 80%;
+    height: 30%;
+    aspect-ratio: 2/1;
+    font-size: 2.8vw;
+}
+
+section.seccionProyectosDestacados > div > article > p > span {
+    font-size: 3vw;
+    font: bold;
+}
+
+section.seccionProyectosDestacados > div > article > div {
+    position: relative;
+    height: 25%;
+    width: 90%;
+}
+
+section.seccionProyectosDestacados > div > article > div > h5 {
+    display: flex;
+    justify-content: center;
+    font-size: 4vw;
+}
+
+section.seccionProyectosDestacados > div > article > div > div {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.seccionProyectosDestacados > div > article > div > div {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 70%;
+    margin: auto;
+}
+
+section.seccionProyectosDestacados
+    > div
+    > article
+    > div
+    > div
+    > div.containerLogosProyectos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20%;
+}
+
+section.seccionProyectosDestacados
+    > div
+    > article
+    > div
+    > div
+    > div.containerLogosProyectos
+    > img.imgLogos {
+    width: 11vw;
+    aspect-ratio: 1/1;
+}
+
+section.seccionProyectosDestacados
+    > div
+    > article
+    > div
+    > div
+    > div.containerGithubProyectos {
+    width: 6.5vw;
+    aspect-ratio: 1/1;
+}
+
+section.seccionProyectosDestacados
+    > div
+    > article
+    > div
+    > div
+    > div.containerGithubProyectos
+    > img.imgGithub {
+    width: 100%;
+    aspect-ratio: 1/1;
+}

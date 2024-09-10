@@ -26,6 +26,11 @@ Extras:
 
 ## Idea de diseño
 
+### Diseño de proyectos
+
+-   Mostrar botones de categorías de proyecto o...
+-   Mostrar un encabezado de artículo que ponga la categoría de artículo (videojuego, pagina, sitio web, backend, etc)
+
 ### Idea movil
 
 -   Un fondo de cielo con cesped debajo

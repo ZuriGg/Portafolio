@@ -1,4 +1,5 @@
 import React from "react";
+import "./Proyectos.css";
 
 function Proyectos({
     imgProyecto1,
@@ -24,19 +25,36 @@ function Proyectos({
                 </p>
                 <div>
                     <h5>Tecnologías</h5>
-                    <div className="containerLogosProyectos">
-                        <img className="imgLogos" src={img1} alt="" srcSet="" />
-                        <img className="imgLogos" src={img2} alt="" srcSet="" />
-                        <img className="imgLogos" src={img3} alt="" srcSet="" />
-                    </div>
-                    <div className="containerGithubProyectos">
-                        {" "}
-                        <img
-                            className="imgGithub"
-                            src={imgGithub}
-                            alt=""
-                            srcSet=""
-                        />
+                    <div>
+                        <div className="containerLogosProyectos">
+                            <img
+                                className="imgLogos"
+                                src={img1}
+                                alt=""
+                                srcSet=""
+                            />
+                            <img
+                                className="imgLogos"
+                                src={img2}
+                                alt=""
+                                srcSet=""
+                            />
+                            <img
+                                className="imgLogos"
+                                src={img3}
+                                alt=""
+                                srcSet=""
+                            />
+                        </div>
+                        <div className="containerGithubProyectos">
+                            {" "}
+                            <img
+                                className="imgGithub"
+                                src={imgGithub}
+                                alt=""
+                                srcSet=""
+                            />
+                        </div>
                     </div>
                 </div>
             </article>

@@ -4,7 +4,7 @@
     font-family: "SUSE", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-
+    transition: all 0.8s;
     line-height: 1.5;
     font-weight: 400;
     background-color: skyblue;
@@ -14,11 +14,16 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+html {
+    transition: all 0.8s;
+}
+
 body {
     margin: 0;
     display: flex;
     min-width: 320px;
     min-height: 100vh;
+    transition: all 0.8s;
 }
 
 button {

@@ -14,12 +14,54 @@ function Header({
         <>
             <header>
                 <nav>
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/contacto">Contacto</NavLink>
-                    <NavLink to="/sobre-mi">Sobre mí</NavLink>
-                    <NavLink to="/proyectos">Proyectos</NavLink>
-                    <NavLink to="/tecnologias">Tecnologías</NavLink>
-                    <NavLink to="/documentacion">Documentación</NavLink>
+                    <NavLink
+                        to="/"
+                        exact
+                        activeClassName="active"
+                        className="nav-link"
+                    >
+                        Home
+                    </NavLink>
+                    <NavLink
+                        to="/contacto"
+                        exact
+                        activeClassName="active"
+                        className="nav-link"
+                    >
+                        Contacto
+                    </NavLink>
+                    <NavLink
+                        to="/sobre-mi"
+                        exact
+                        activeClassName="active"
+                        className="nav-link"
+                    >
+                        Sobre mí
+                    </NavLink>
+                    <NavLink
+                        to="/proyectos"
+                        exact
+                        activeClassName="active"
+                        className="nav-link"
+                    >
+                        Proyectos
+                    </NavLink>
+                    <NavLink
+                        to="/tecnologias"
+                        exact
+                        activeClassName="active"
+                        className="nav-link"
+                    >
+                        Tecnologías
+                    </NavLink>
+                    <NavLink
+                        to="/documentacion"
+                        exact
+                        activeClassName="active"
+                        className="nav-link"
+                    >
+                        Documentación
+                    </NavLink>
                 </nav>
                 <NombreIntro
                     imgPerfil={imgPerfil}
