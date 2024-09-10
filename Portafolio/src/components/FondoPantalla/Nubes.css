@@ -10,8 +10,7 @@
 
 .nube {
     position: absolute;
-    width: 150px;
-    height: 100px;
+    width: 80vh;
     aspect-ratio: 16/9;
     background-image: url("../../assets/img/nube1.png");
     background-size: contain;
@@ -22,9 +21,15 @@
 
 @keyframes moverNube {
     0% {
-        left: 100%;
+        transform: translateX(100vw);
     }
     100% {
-        left: -150px;
+        transform: translateX(-300vw);
+    }
+}
+
+@media (min-width: 730px) {
+    .nube {
+        width: 150vh;
     }
 }

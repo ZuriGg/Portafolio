@@ -21,7 +21,7 @@ function Nubes() {
         };
     }, []);
 
-    const alturaNube = 100;
+    const alturaNube = 50;
     const nubesArray = Array.from({ length: Math.ceil(altura / alturaNube) });
 
     return (
@@ -35,7 +35,7 @@ function Nubes() {
                             (index * alturaNube) % (altura + alturaNube)
                         }px`,
                         left: `${Math.random() * 100}%`,
-                        animationDuration: `${10 + Math.random() * 30}s`,
+                        animationDuration: `${30 + Math.random() * 50}s`,
                     }}
                 ></div>
             ))}
