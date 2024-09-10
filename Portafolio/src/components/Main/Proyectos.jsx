@@ -16,7 +16,7 @@ function Proyectos({
     const handleMouseEnter = () => {
         hoverTimeout.current = setTimeout(() => {
             setIsScaled(true);
-        }, 400);
+        }, 300);
     };
 
     const handleMouseLeave = () => {
