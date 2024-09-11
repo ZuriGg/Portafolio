@@ -220,19 +220,21 @@ header
     padding: 0.6vh;
     margin: auto;
     margin-top: 1rem;
-    box-shadow: 1px 1px 0px hsl(33, 40%, 40%), 1.2px 1.2px 0px hsl(33, 39%, 40%),
-        1.4px 1.4px 0px hsl(33, 38%, 40%), 1.6px 1.6px 0px hsl(33, 37%, 40%),
-        1.8px 1.8px 0px hsl(33, 36%, 40%), 2px 2px 0px hsl(33, 35%, 40%),
-        2.2px 2.2px 0px hsl(33, 34%, 40%), 2.4px 2.4px 0px hsl(33, 33%, 40%),
-        2.6px 2.6px 0px hsl(33, 32%, 40%), 2.8px 2.8px 0px hsl(33, 31%, 40%),
-        3px 3px 0px hsl(33, 30%, 40%), 3.2px 3.2px 0px hsl(33, 29%, 40%),
-        3.4px 3.4px 0px hsl(33, 28%, 40%), 3.6px 3.6px 0px hsl(33, 27%, 40%),
-        3.8px 3.8px 0px hsl(33, 26%, 40%), 4px 4px 0px hsl(33, 25%, 40%),
-        4.2px 4.2px 0px hsl(33, 24%, 40%), 4.4px 4.4px 0px hsl(33, 23%, 40%),
-        4.6px 4.6px 0px hsl(33, 22%, 40%), 4.8px 4.8px 0px hsl(33, 21%, 40%),
-        5px 5px 0px hsl(33, 20%, 40%), 0.41em 0.41em 20px rgba(0, 0, 0, 0.6),
-        inset -8px -8px 12px rgba(154, 114, 64, 0.5),
-        inset 8px 8px 12px rgba(199, 164, 120, 0.5);
+    width: fit-content;
+    background-color: hsl(95, 59%, 75%);
+    box-shadow: 1px 1px 0px hsl(95, 40%, 40%), 1.2px 1.2px 0px hsl(95, 39%, 40%),
+        1.4px 1.4px 0px hsl(95, 38%, 40%), 1.6px 1.6px 0px hsl(95, 37%, 40%),
+        1.8px 1.8px 0px hsl(95, 36%, 40%), 2px 2px 0px hsl(95, 35%, 40%),
+        2.2px 2.2px 0px hsl(95, 34%, 40%), 2.4px 2.4px 0px hsl(95, 33%, 40%),
+        2.6px 2.6px 0px hsl(95, 32%, 40%), 2.8px 2.8px 0px hsl(95, 31%, 40%),
+        3px 3px 0px hsl(95, 30%, 40%), 3.2px 3.2px 0px hsl(95, 29%, 40%),
+        3.4px 3.4px 0px hsl(95, 28%, 40%), 3.6px 3.6px 0px hsl(95, 27%, 40%),
+        3.8px 3.8px 0px hsl(95, 26%, 40%), 4px 4px 0px hsl(95, 25%, 40%),
+        4.2px 4.2px 0px hsl(95, 24%, 40%), 4.4px 4.4px 0px hsl(95, 23%, 40%),
+        4.6px 4.6px 0px hsl(95, 22%, 40%), 4.8px 4.8px 0px hsl(95, 21%, 40%),
+        5px 5px 0px hsl(95, 20%, 40%), 0.41em 0.41em 20px rgba(0, 0, 0, 0.6),
+        inset -8px -8px 12px rgba(95, 114, 64, 0.5),
+        inset 8px 8px 12px rgba(95, 164, 120, 0.5);
 }
 
 header
@@ -249,20 +251,20 @@ header
     width: 100%;
     margin: auto;
     padding: 0.8vh;
-    background-color: #ffe6c6;
-    box-shadow: inset 1px 1px 0px hsl(33, 40%, 40%),
-        inset 1.2px 1.2px 0px hsl(33, 40%, 40%),
-        inset 1.4px 1.4px 0px hsl(33, 40%, 40%),
-        inset 1.6px 1.6px 0px hsl(33, 40%, 40%),
-        inset 1.8px 1.8px 0px hsl(33, 40%, 40%),
-        inset 2px 2px 0px hsl(33, 40%, 40%),
-        inset 2.2px 2.2px 0px hsl(33, 40%, 40%),
-        inset 2.4px 2.4px 0px hsl(33, 40%, 40%),
-        inset 2.6px 2.6px 0px hsl(33, 40%, 40%),
-        inset 2.8px 2.8px 10px hsl(33, 40%, 40%),
-        inset 3px 3px 10px hsl(33, 40%, 40%),
-        -8px -8px 12px rgba(154, 114, 64, 0.5),
-        8px 8px 12px rgba(199, 164, 120, 0.5);
+    background-color: hsl(95, 100%, 85%);
+    box-shadow: inset 1px 1px 0px hsl(95, 40%, 40%),
+        inset 1.2px 1.2px 0px hsl(95, 40%, 40%),
+        inset 1.4px 1.4px 0px hsl(95, 40%, 40%),
+        inset 1.6px 1.6px 0px hsl(95, 40%, 40%),
+        inset 1.8px 1.8px 0px hsl(95, 40%, 40%),
+        inset 2px 2px 0px hsl(95, 40%, 40%),
+        inset 2.2px 2.2px 0px hsl(95, 40%, 40%),
+        inset 2.4px 2.4px 0px hsl(95, 40%, 40%),
+        inset 2.6px 2.6px 0px hsl(95, 40%, 40%),
+        inset 2.8px 2.8px 10px hsl(95, 40%, 40%),
+        inset 3px 3px 10px hsl(95, 40%, 40%),
+        -8px -8px 12px rgba(95, 114, 64, 0.5),
+        8px 8px 12px rgba(95, 164, 120, 0.5);
 }
 
 header
@@ -325,6 +327,47 @@ header
 /* ------------------------------------------ MEDIA QUERY ------------------------------------------ */
 @media (min-width: 840px) {
     /* ------- CONTENIDO ------- */
+
+    header
+        div.headerContentContainer
+        > div.logosHeaderContainer
+        > div.boxContainer {
+        padding: 1vh;
+        box-shadow: 1px 1px 0px hsl(95, 40%, 40%),
+            1.5px 1.5px 0px hsl(95, 39%, 40%), 2px 2px 0px hsl(95, 38%, 40%),
+            2.5px 2.5px 0px hsl(95, 37%, 40%), 3px 3px 0px hsl(95, 36%, 40%),
+            3.5px 3.5px 0px hsl(95, 35%, 40%), 4px 4px 0px hsl(95, 34%, 40%),
+            4.5px 4.5px 0px hsl(95, 33%, 40%), 5px 5px 0px hsl(95, 32%, 40%),
+            5.5px 5.5px 0px hsl(95, 31%, 40%), 6px 6px 0px hsl(95, 30%, 40%),
+            6.5px 6.5px 0px hsl(95, 29%, 40%), 7px 7px 0px hsl(95, 28%, 40%),
+            7.5px 7.5px 0px hsl(95, 27%, 40%), 8px 8px 0px hsl(95, 26%, 40%),
+            8.5px 8.5px 0px hsl(95, 25%, 40%), 9px 9px 0px hsl(95, 24%, 40%),
+            9.5px 9.5px 0px hsl(95, 23%, 40%), 10px 10px 0px hsl(95, 22%, 40%),
+            10.5px 10.5px 0px hsl(95, 21%, 40%), 11px 11px 0px hsl(95, 20%, 40%),
+            0.41em 0.41em 20px rgba(0, 0, 0, 0.6),
+            inset -8px -8px 12px rgba(95, 114, 64, 0.5),
+            inset 8px 8px 12px rgba(95, 164, 120, 0.5);
+    }
+
+    header
+        div.headerContentContainer
+        > div.logosHeaderContainer
+        > div.boxContainer
+        > div.inContainer {
+        box-shadow: inset 1px 1px 0px hsl(95, 40%, 40%),
+            inset 1.5px 1.5px 0px hsl(95, 40%, 40%),
+            inset 2px 2px 0px hsl(95, 40%, 40%),
+            inset 2.5px 2.5px 0px hsl(95, 40%, 40%),
+            inset 3px 3px 0px hsl(95, 40%, 40%),
+            inset 3.5px 3.5px 0px hsl(95, 40%, 40%),
+            inset 4px 4px 0px hsl(95, 40%, 40%),
+            inset 4.5px 4.5px 0px hsl(95, 40%, 40%),
+            inset 5px 5px 0px hsl(95, 40%, 40%),
+            inset 5.5px 5.5px 10px hsl(95, 40%, 40%),
+            inset 6px 6px 10px hsl(95, 40%, 40%),
+            -8px -8px 12px rgba(95, 114, 64, 0.5),
+            8px 8px 12px rgba(95, 164, 120, 0.5);
+    }
 
     header div.headerContentContainer {
         position: relative;
@@ -473,6 +516,7 @@ header
     }
 
     /* ------- BOTONES SOCIAL MEDIA ------- */
+
     header
         div.headerContentContainer
         > div.logosHeaderContainer
