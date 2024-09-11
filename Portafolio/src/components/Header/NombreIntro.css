@@ -155,14 +155,51 @@ header
 }
 
 /* ------- IMAGEN DE PERFIL ------- */
+
+@keyframes cambioSombra {
+    0% {
+        box-shadow: 0px 0px 2vh #ff0000;
+    }
+    10% {
+        box-shadow: 0px 0px 2vh #ff7f00;
+    }
+    20% {
+        box-shadow: 0px 0px 2vh #ffff00;
+    }
+    30% {
+        box-shadow: 0px 0px 2vh #7fff00;
+    }
+    40% {
+        box-shadow: 0px 0px 2vh #00ff00;
+    }
+    50% {
+        box-shadow: 0px 0px 2vh #00ff7f;
+    }
+    60% {
+        box-shadow: 0px 0px 2vh #00ffff;
+    }
+    70% {
+        box-shadow: 0px 0px 2vh #007fff;
+    }
+    80% {
+        box-shadow: 0px 0px 2vh #0000ff;
+    }
+    90% {
+        box-shadow: 0px 0px 2vh #7f00ff;
+    }
+    100% {
+        box-shadow: 0px 0px 2vh #ff00ff;
+    }
+}
+
 header div.headerContentContainer > img.imgPerfil {
     grid-area: perfil;
     width: clamp(18vw, 18%, 5%);
     aspect-ratio: 1/1;
     border-radius: 2vh;
     margin: auto;
-    box-shadow: 0px 0px 1.5vw rgb(0, 0, 0);
-    transition: all 0.8s;
+    animation: cambioSombra 5s linear infinite;
+    transition: all 3s easy-in;
 }
 
 header div.headerContentContainer > img.imgPerfil:hover {
@@ -320,10 +357,48 @@ header
     }
 
     /* ------- IMAGEN DE PERFIL ------- */
+
+    @keyframes cambioSombra {
+        0% {
+            box-shadow: 0px 0px 3vh #ff0000;
+        }
+        10% {
+            box-shadow: 0px 0px 3vh #ff7f00;
+        }
+        20% {
+            box-shadow: 0px 0px 3vh #ffff00;
+        }
+        30% {
+            box-shadow: 0px 0px 3vh #7fff00;
+        }
+        40% {
+            box-shadow: 0px 0px 3vh #00ff00;
+        }
+        50% {
+            box-shadow: 0px 0px 3vh #00ff7f;
+        }
+        60% {
+            box-shadow: 0px 0px 3vh #00ffff;
+        }
+        70% {
+            box-shadow: 0px 0px 3vh #007fff;
+        }
+        80% {
+            box-shadow: 0px 0px 3vh #0000ff;
+        }
+        90% {
+            box-shadow: 0px 0px 3vh #7f00ff;
+        }
+        100% {
+            box-shadow: 0px 0px 3vh #ff00ff;
+        }
+    }
+
     header div.headerContentContainer > img.imgPerfil {
         grid-area: perfil;
         width: 50%;
-        transition: all 0.7s;
+        animation: cambioSombra 5s linear infinite;
+        transition: all 3s easy-in;
     }
 
     header div.headerContentContainer > img.imgPerfil:hover {
@@ -359,7 +434,7 @@ header
         div.headerContentContainer
         > div.logosHeaderContainer
         > button:hover {
-        transform: scale(1.1);
+        transform: scale(1.3);
     }
 
     header
@@ -367,7 +442,7 @@ header
         > div.logosHeaderContainer
         > button:active {
         transition: all 0s;
-        transform: scale(0.9);
+        transform: scale(1);
     }
 
     header

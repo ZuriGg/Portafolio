@@ -15,6 +15,10 @@ function NombreIntro({
         window.location.href = mailtoLink;
     };
 
+    const redirigir = () => {
+        window.location.href = "https://github.com/ZuriGg";
+    };
+
     return (
         <div className="headerContentContainer">
             <Link to="/">
@@ -44,7 +48,7 @@ function NombreIntro({
             <img className="imgPerfil" src={imgPerfil} alt="" />
 
             <div className="logosHeaderContainer">
-                <button>
+                <button onClick={redirigir}>
                     <img className="imgLogoHeader" src={imgGithub} alt="" />
                 </button>
                 <button>
