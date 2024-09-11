@@ -72,8 +72,6 @@ function Header({
                     imgCV={imgCV}
                 />
             </header>
-
-            <Outlet />
         </>
     );
 }
