@@ -26,6 +26,7 @@ div.contenedorSobreMi > section.seccionSobreMi {
 
 div.contenedorSobreMi > section.seccionSobreMi > p {
     font-size: 3.9vw;
+    text-shadow: 1px 1px 2px hsl(0, 0%, 50%);
 }
 
 /* --------------------------------- MEDIA QUERY --------------------------------- */
@@ -36,8 +37,8 @@ div.contenedorSobreMi > section.seccionSobreMi > p {
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 30%;
-        aspect-ratio: 7/4;
+        height: 40vh;
+        width: fit-content;
         margin: auto;
         background-image: url("../../assets/img/nubePrincipal.png");
         background-size: contain;
@@ -58,7 +59,7 @@ div.contenedorSobreMi > section.seccionSobreMi > p {
     }
 
     div.contenedorSobreMi > section.seccionSobreMi > p {
-        font-size: 250%;
+        font-size: 3vh;
         text-shadow: 1px 1px 2px hsl(0, 0%, 50%);
     }
 }
