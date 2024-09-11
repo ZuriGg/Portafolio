@@ -49,9 +49,12 @@ header div.headerContentContainer h1:hover {
 }
 
 header div.headerContentContainer h2 {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 4vh;
+
     font-size: 4vw;
     width: 100%;
-    margin-left: 4vh;
     transition: all 0.8s;
     font-weight: bold;
     white-space: nowrap;
