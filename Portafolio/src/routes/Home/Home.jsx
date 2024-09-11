@@ -22,71 +22,79 @@ function Home({
             <SobreMiRedux />
             <section className="seccionProyectosDestacados">
                 <h3>Proyectos destacados</h3>
-                <Proyectos
-                    imgProyecto1={imgProyecto1}
-                    nombre="Pokédex indexada"
-                    descripcion="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                <div className="proyectosContainer">
+                    <Proyectos
+                        className="proyecto1"
+                        imgProyecto={imgProyecto1}
+                        nombre="Pokédex avanzada"
+                        descripcion=<>
+                            "Se trata de la clásica"<strong>"Poke API"</strong>{" "}
+                            "a la cual he agregado diversas funcionalidades para
+                            exprimir mis habilidades con HTML, CSS y JavaScript
+                            sin el uso de ningún FrameWork."
+                        </>
+                        imgGithub={imgGithub}
+                        img1={imgHTML}
+                        img2={imgCSS}
+                        img3={imgJavaScript}
+                    />
+                    <Proyectos
+                        className="proyecto2"
+                        imgProyecto={imgProyecto2}
+                        nombre="Diseña tu web"
+                        descripcion="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Veniam sequi impedit ut quclassNameem odit perferendis, sunt
                     cumque necessitatibus laborum autem nobis corporis,
                     dignissimos totam expedita, aut ex quisquam perspiciatis
                     voluptatum."
-                    imgGithub={imgGithub}
-                    img1={imgHTML}
-                    img2={imgCSS}
-                    img3={imgJavaScript}
-                />
-                <Proyectos
-                    imgProyecto1={imgProyecto2}
-                    nombre="Diseña tu web"
-                    descripcion="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        imgGithub={imgGithub}
+                        img1={imgHTML}
+                        img2={imgCSS}
+                        img3={imgJavaScript}
+                    />
+                    <Proyectos
+                        className="proyecto5"
+                        imgProyecto={imgProyecto5}
+                        nombre="Gestor de servidor"
+                        descripcion="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        Veniam sequi impedit ut quclassNameem odit perferendis, sunt
+                        cumque necessitatibus laborum autem nobis corporis,
+                        dignissimos totam expedita, aut ex quisquam perspiciatis
+                        voluptatum."
+                        imgGithub={imgGithub}
+                        img1={imgHTML}
+                        img2={imgCSS}
+                        img3={imgJavaScript}
+                    />
+                    <Proyectos
+                        className="proyecto4"
+                        imgProyecto={imgProyecto4}
+                        nombre="Foro de Rol"
+                        descripcion="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Veniam sequi impedit ut quclassNameem odit perferendis, sunt
                     cumque necessitatibus laborum autem nobis corporis,
                     dignissimos totam expedita, aut ex quisquam perspiciatis
                     voluptatum."
-                    imgGithub={imgGithub}
-                    img1={imgHTML}
-                    img2={imgCSS}
-                    img3={imgJavaScript}
-                />
-                <Proyectos
-                    imgProyecto1={imgProyecto3}
-                    nombre="Translate to"
-                    descripcion="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                        imgGithub={imgGithub}
+                        img1={imgHTML}
+                        img2={imgCSS}
+                        img3={imgJavaScript}
+                    />
+                    <Proyectos
+                        className="proyecto3"
+                        imgProyecto={imgProyecto3}
+                        nombre="Translate to"
+                        descripcion="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Veniam sequi impedit ut quclassNameem odit perferendis, sunt
                     cumque necessitatibus laborum autem nobis corporis,
                     dignissimos totam expedita, aut ex quisquam perspiciatis
                     voluptatum."
-                    imgGithub={imgGithub}
-                    img1={imgHTML}
-                    img2={imgCSS}
-                    img3={imgJavaScript}
-                />
-                <Proyectos
-                    imgProyecto1={imgProyecto4}
-                    nombre="Foro de Rol"
-                    descripcion="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Veniam sequi impedit ut quclassNameem odit perferendis, sunt
-                    cumque necessitatibus laborum autem nobis corporis,
-                    dignissimos totam expedita, aut ex quisquam perspiciatis
-                    voluptatum."
-                    imgGithub={imgGithub}
-                    img1={imgHTML}
-                    img2={imgCSS}
-                    img3={imgJavaScript}
-                />
-                <Proyectos
-                    imgProyecto1={imgProyecto5}
-                    nombre="Gestor de servidor"
-                    descripcion="Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Veniam sequi impedit ut quclassNameem odit perferendis, sunt
-                    cumque necessitatibus laborum autem nobis corporis,
-                    dignissimos totam expedita, aut ex quisquam perspiciatis
-                    voluptatum."
-                    imgGithub={imgGithub}
-                    img1={imgHTML}
-                    img2={imgCSS}
-                    img3={imgJavaScript}
-                />
+                        imgGithub={imgGithub}
+                        img1={imgHTML}
+                        img2={imgCSS}
+                        img3={imgJavaScript}
+                    />
+                </div>
             </section>
             <Tecnologias
                 imgMySql={imgMySql}

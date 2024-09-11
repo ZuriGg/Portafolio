@@ -1,10 +1,17 @@
-import { Navigate, Route, Routes } from "react-router-dom";
+import { Navigate, Route, Routes, useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 import "./App.css";
 
 import Header from "./components/Header/Header.jsx";
 import Home from "./routes/Home/Home.jsx";
 import Cesped from "./components/FondoPantalla/Cesped.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+
+import Contacto from "./routes/Contacto/Contacto.jsx";
+import Documentacion from "./routes/Documentacion/Documentacion.jsx";
+import SobreMi from "./routes/SobreMi/SobreMi.jsx";
+import Proyectos from "./routes/Proyectos/Proyectos.jsx";
+import Tecnologias from "./routes/Tecnologias/Tecnologias.jsx";
 
 //Imagenes
 import imgPerfil from "./assets/img/fotoPerfil2.png";
@@ -30,6 +37,49 @@ import imgNube from "./assets/img/nube1.png";
 import Nubes from "./components/FondoPantalla/Nubes.jsx";
 
 function App() {
+    const location = useLocation();
+
+    /*     const [audioPlayed, setAudioPlayed] = useState(false);
+
+    const playMusic = () => {
+        if (!audioPlayed) {
+            const audio = new Audio("/path/to/your/music.mp3");
+            audio.play();
+            setAudioPlayed(true);
+        }
+    };
+
+    const handleMouseMove = () => {
+        playMusic();
+        document.removeEventListener("mousemove", handleMouseMove);
+    };
+
+    React.useEffect(() => {
+        document.addEventListener("mousemove", handleMouseMove);
+
+        return () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+        };
+    }, []); */
+
+    useEffect(() => {
+        if (location.pathname === "/") {
+            document.title = "smanzano.dev";
+        } else if (location.pathname === "/contacto") {
+            document.title = "smanzano - contacto";
+        } else if (location.pathname === "/sobre-mi") {
+            document.title = "smanzano - sobre-mi";
+        } else if (location.pathname === "/proyectos") {
+            document.title = "smanzano - proyectos";
+        } else if (location.pathname === "/tecnologias") {
+            document.title = "smanzano - tecnologías";
+        } else if (location.pathname === "/documentacion") {
+            document.title = "smanzano - documentación";
+        } else {
+            document.title = "smanzano.dev";
+        }
+    }, [location]);
+
     return (
         <>
             <Header
@@ -62,11 +112,11 @@ function App() {
                             />
                         }
                     />
-                    <Route path="contacto" element={<p>MEME</p>} />
-                    <Route path="sobre-mi" element={<p>Mama</p>} />
-                    <Route path="proyectos" element={<p>MIMI</p>} />
-                    <Route path="tecnologias" element={<p>MOMO</p>} />
-                    <Route path="documentacion" element={<p>MUMU</p>} />
+                    <Route path="contacto" element={<Contacto />} />
+                    <Route path="sobre-mi" element={<SobreMi />} />
+                    <Route path="proyectos" element={<Proyectos />} />
+                    <Route path="tecnologias" element={<Tecnologias />} />
+                    <Route path="documentacion" element={<Documentacion />} />
 
                     <Route path="*" element={<Navigate to="/" replace />} />
                 </Routes>
