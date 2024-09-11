@@ -48,15 +48,27 @@ function NombreIntro({
             <img className="imgPerfil" src={imgPerfil} alt="" />
 
             <div className="logosHeaderContainer">
-                <button onClick={redirigir}>
-                    <img className="imgLogoHeader" src={imgGithub} alt="" />
-                </button>
-                <button>
-                    <img className="imgLogoHeader" src={imgLinkedin} alt="" />
-                </button>
-                <button>
-                    <img className="imgLogoHeader" src={imgCV} alt="" />
-                </button>
+                <div className="boxContainer">
+                    <div className="inContainer">
+                        <button onClick={redirigir}>
+                            <img
+                                className="imgLogoHeader"
+                                src={imgGithub}
+                                alt=""
+                            />
+                        </button>
+                        <button>
+                            <img
+                                className="imgLogoHeader"
+                                src={imgLinkedin}
+                                alt=""
+                            />
+                        </button>
+                        <button>
+                            <img className="imgLogoHeader" src={imgCV} alt="" />
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
     );

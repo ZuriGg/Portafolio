@@ -208,38 +208,84 @@ header div.headerContentContainer > img.imgPerfil:hover {
 }
 
 /* ------- BOTONES SOCIAL MEDIA ------- */
-header div.headerContentContainer > div.logosHeaderContainer {
-    position: relative;
-    grid-area: logos;
+
+header
+    div.headerContentContainer
+    > div.logosHeaderContainer
+    > div.boxContainer {
+    border-radius: 0.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0.6vh;
+    margin: auto;
     margin-top: 1rem;
-    width: 100%;
-}
-
-header div.headerContentContainer > div.logosHeaderContainer > button {
-    width: 100%;
-    aspect-ratio: 1/1;
-    padding: 0;
-    border: none;
-    background: none;
-    margin-right: 1rem;
-    transition: all 0.4s;
-}
-
-header div.headerContentContainer > div.logosHeaderContainer > button:hover {
-    transform: scale(1.1);
-}
-
-header div.headerContentContainer > div.logosHeaderContainer > button:active {
-    transition: all 0s;
-    transform: scale(0.9);
+    box-shadow: 1px 1px 0px hsl(33, 40%, 40%), 1.2px 1.2px 0px hsl(33, 39%, 40%),
+        1.4px 1.4px 0px hsl(33, 38%, 40%), 1.6px 1.6px 0px hsl(33, 37%, 40%),
+        1.8px 1.8px 0px hsl(33, 36%, 40%), 2px 2px 0px hsl(33, 35%, 40%),
+        2.2px 2.2px 0px hsl(33, 34%, 40%), 2.4px 2.4px 0px hsl(33, 33%, 40%),
+        2.6px 2.6px 0px hsl(33, 32%, 40%), 2.8px 2.8px 0px hsl(33, 31%, 40%),
+        3px 3px 0px hsl(33, 30%, 40%), 3.2px 3.2px 0px hsl(33, 29%, 40%),
+        3.4px 3.4px 0px hsl(33, 28%, 40%), 3.6px 3.6px 0px hsl(33, 27%, 40%),
+        3.8px 3.8px 0px hsl(33, 26%, 40%), 4px 4px 0px hsl(33, 25%, 40%),
+        4.2px 4.2px 0px hsl(33, 24%, 40%), 4.4px 4.4px 0px hsl(33, 23%, 40%),
+        4.6px 4.6px 0px hsl(33, 22%, 40%), 4.8px 4.8px 0px hsl(33, 21%, 40%),
+        5px 5px 0px hsl(33, 20%, 40%), 0.41em 0.41em 20px rgba(0, 0, 0, 0.6),
+        inset -8px -8px 12px rgba(154, 114, 64, 0.5),
+        inset 8px 8px 12px rgba(199, 164, 120, 0.5);
 }
 
 header
     div.headerContentContainer
     > div.logosHeaderContainer
+    > div.boxContainer
+    > div.inContainer {
+    border-radius: 0.5vh;
+    position: relative;
+    grid-area: logos;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+    padding: 0.8vh;
+    background-color: #ffe6c6;
+    box-shadow: inset 1px 1px 0px hsl(33, 40%, 40%),
+        inset 1.2px 1.2px 0px hsl(33, 40%, 40%),
+        inset 1.4px 1.4px 0px hsl(33, 40%, 40%),
+        inset 1.6px 1.6px 0px hsl(33, 40%, 40%),
+        inset 1.8px 1.8px 0px hsl(33, 40%, 40%),
+        inset 2px 2px 0px hsl(33, 40%, 40%),
+        inset 2.2px 2.2px 0px hsl(33, 40%, 40%),
+        inset 2.4px 2.4px 0px hsl(33, 40%, 40%),
+        inset 2.6px 2.6px 0px hsl(33, 40%, 40%),
+        inset 2.8px 2.8px 10px hsl(33, 40%, 40%),
+        inset 3px 3px 10px hsl(33, 40%, 40%),
+        -8px -8px 12px rgba(154, 114, 64, 0.5),
+        8px 8px 12px rgba(199, 164, 120, 0.5);
+}
+
+header
+    div.headerContentContainer
+    > div.logosHeaderContainer
+    > div.boxContainer
+    > div.inContainer
+    > button {
+    width: 100%;
+    aspect-ratio: 1/1;
+    padding: 0;
+    border: none;
+    background: none;
+    margin: auto;
+    margin-right: 1rem;
+    transition: all 0.4s;
+}
+
+header
+    div.headerContentContainer
+    > div.logosHeaderContainer
+    > div.boxContainer
+    > div.inContainer
     > button:last-child {
     margin-right: 0;
     position: relative;
@@ -248,6 +294,27 @@ header
 header
     div.headerContentContainer
     > div.logosHeaderContainer
+    > div.boxContainer
+    > div.inContainer
+    > button:hover {
+    transform: scale(1.1);
+}
+
+header
+    div.headerContentContainer
+    > div.logosHeaderContainer
+    > div.boxContainer
+    > div.inContainer
+    > button:active {
+    transition: all 0s;
+    transform: scale(0.9);
+}
+
+header
+    div.headerContentContainer
+    > div.logosHeaderContainer
+    > div.boxContainer
+    > div.inContainer
     > button
     > img.imgLogoHeader {
     height: 6.5vw;
@@ -406,7 +473,11 @@ header
     }
 
     /* ------- BOTONES SOCIAL MEDIA ------- */
-    header div.headerContentContainer > div.logosHeaderContainer {
+    header
+        div.headerContentContainer
+        > div.logosHeaderContainer
+        > div.boxContainer
+        > div.inContainer {
         position: relative;
         grid-area: logos;
         margin-top: 1rem;
@@ -415,7 +486,12 @@ header
         /*         border: solid green 2px; */
     }
 
-    header div.headerContentContainer > div.logosHeaderContainer > button {
+    header
+        div.headerContentContainer
+        > div.logosHeaderContainer
+        > div.boxContainer
+        > div.inContainer
+        > button {
         width: 100%;
         aspect-ratio: 1/1;
         margin-right: 2rem;
@@ -425,6 +501,8 @@ header
     header
         div.headerContentContainer
         > div.logosHeaderContainer
+        > div.boxContainer
+        > div.inContainer
         > button:last-child {
         margin-right: 0;
         position: relative;
@@ -433,6 +511,8 @@ header
     header
         div.headerContentContainer
         > div.logosHeaderContainer
+        > div.boxContainer
+        > div.inContainer
         > button:hover {
         transform: scale(1.3);
     }
@@ -440,6 +520,8 @@ header
     header
         div.headerContentContainer
         > div.logosHeaderContainer
+        > div.boxContainer
+        > div.inContainer
         > button:active {
         transition: all 0s;
         transform: scale(1);
@@ -448,6 +530,8 @@ header
     header
         div.headerContentContainer
         > div.logosHeaderContainer
+        > div.boxContainer
+        > div.inContainer
         > button
         > img.imgLogoHeader {
         height: 2.5vw;
