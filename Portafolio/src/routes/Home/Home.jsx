@@ -26,10 +26,10 @@ function Home({
                         imgProyecto={imgProyecto1}
                         nombre="Pokédex funcional"
                         descripcion=<>
-                            "Se trata de la clásica"<strong>"Poke API"</strong>{" "}
-                            "a la cual he agregado diversas funcionalidades para
+                            Se trata de la clásica <strong>"Poke API"</strong> a
+                            la cual he agregado diversas funcionalidades para
                             exprimir mis habilidades con HTML, CSS y JavaScript
-                            sin el uso de ningún FrameWork."
+                            sin el uso de ningún FrameWork.
                         </>
                         imgGithub={imgGithub}
                         img1={imgHTML}

@@ -27,53 +27,55 @@ function Proyectos({
 
     return (
         <div className={className}>
-            <article>
-                <h4>{nombre}</h4>
-                <img
-                    className={`button ${isScaled ? "scale-up" : ""}`}
-                    onMouseEnter={handleMouseEnter}
-                    onMouseLeave={handleMouseLeave}
-                    src={imgProyecto}
-                    alt=""
-                    srcSet=""
-                />
-                <h5>Descripción de proyecto:</h5>
-                <p>{descripcion}</p>
-                <div>
-                    <h5>Tecnologías</h5>
+            <div className="cajaProyectos">
+                <article>
+                    <h4>{nombre}</h4>
+                    <img
+                        className={`button ${isScaled ? "scale-up" : ""}`}
+                        onMouseEnter={handleMouseEnter}
+                        onMouseLeave={handleMouseLeave}
+                        src={imgProyecto}
+                        alt=""
+                        srcSet=""
+                    />
+                    <h5>Descripción de proyecto:</h5>
+                    <p>{descripcion}</p>
                     <div>
-                        <div className="containerLogosProyectos">
-                            <img
-                                className="imgLogos"
-                                src={img1}
-                                alt=""
-                                srcSet=""
-                            />
-                            <img
-                                className="imgLogos"
-                                src={img2}
-                                alt=""
-                                srcSet=""
-                            />
-                            <img
-                                className="imgLogos"
-                                src={img3}
-                                alt=""
-                                srcSet=""
-                            />
-                        </div>
-                        <div className="containerGithubProyectos">
-                            {" "}
-                            <img
-                                className="imgGithub"
-                                src={imgGithub}
-                                alt=""
-                                srcSet=""
-                            />
+                        <h5>Tecnologías</h5>
+                        <div>
+                            <div className="containerLogosProyectos">
+                                <img
+                                    className="imgLogos"
+                                    src={img1}
+                                    alt=""
+                                    srcSet=""
+                                />
+                                <img
+                                    className="imgLogos"
+                                    src={img2}
+                                    alt=""
+                                    srcSet=""
+                                />
+                                <img
+                                    className="imgLogos"
+                                    src={img3}
+                                    alt=""
+                                    srcSet=""
+                                />
+                            </div>
+                            <div className="containerGithubProyectos">
+                                {" "}
+                                <img
+                                    className="imgGithub"
+                                    src={imgGithub}
+                                    alt=""
+                                    srcSet=""
+                                />
+                            </div>
                         </div>
                     </div>
-                </div>
-            </article>
+                </article>
+            </div>
         </div>
     );
 }
