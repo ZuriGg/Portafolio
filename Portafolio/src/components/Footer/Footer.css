@@ -17,6 +17,7 @@ footer > p {
     font-size: 3.5vw;
     margin-bottom: 1rem;
     background: none;
+    text-shadow: 0.5px 0.5px 1px #ffd700;
 }
 
 footer > p:last-child {
@@ -32,5 +33,6 @@ footer > p:last-child {
 
     footer > p {
         font-size: 2vw;
+        text-shadow: 1px 1px 2px #ffd700;
     }
 }
