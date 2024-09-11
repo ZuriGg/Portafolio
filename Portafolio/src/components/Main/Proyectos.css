@@ -4,6 +4,9 @@ section.seccionProyectosDestacados h3 {
     font-size: clamp(1rem, 7vw, 9rem);
     margin: auto;
     margin-bottom: 3vh;
+    text-shadow: 0px 1px 1px hsl(0, 0%, 0%), 0px 2px 2px hsl(0, 0%, 20%),
+        0px 3px 3px hsl(0, 0%, 40%), 0px 4px 4px hsl(0, 0%, 60%),
+        0px 5px 5px hsl(0, 0%, 80%);
 }
 
 section.seccionProyectosDestacados > div.proyectosContainer {
@@ -179,24 +182,8 @@ section.seccionProyectosDestacados
 /* --------------------------------- MEDIA QUERY --------------------------------- */
 
 @media (min-width: 840px) {
-    section.seccionProyectosDestacados {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-        z-index: 1;
-        width: 100%;
-        margin: auto;
-    }
-
     section.seccionProyectosDestacados h3 {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
         font-size: 3.5vw;
-        margin-bottom: 1vh;
     }
 
     section.seccionProyectosDestacados div.proyectosContainer {
@@ -209,12 +196,7 @@ section.seccionProyectosDestacados
     }
 
     section.seccionProyectosDestacados div.proyectosContainer > div {
-        position: relative;
-        display: flex;
-        justify-content: space-evenly;
-        flex-direction: column;
         width: 28%;
-        margin: auto;
     }
 
     .proyecto1 {

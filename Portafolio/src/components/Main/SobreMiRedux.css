@@ -59,5 +59,6 @@ div.contenedorSobreMi > section.seccionSobreMi > p {
 
     div.contenedorSobreMi > section.seccionSobreMi > p {
         font-size: 250%;
+        text-shadow: 1px 1px 2px hsl(0, 0%, 50%);
     }
 }

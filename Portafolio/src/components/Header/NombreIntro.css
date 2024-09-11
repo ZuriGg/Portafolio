@@ -291,7 +291,7 @@ header
     }
 
     header div.headerContentContainer h1:hover {
-        transform: translateX(6px) translateY(6px);
+        transform: translateX(8px) translateY(8px);
         text-shadow: 0 0px 3px #000000;
     }
 

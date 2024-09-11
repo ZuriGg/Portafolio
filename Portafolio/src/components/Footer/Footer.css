@@ -22,3 +22,15 @@ footer > p {
 footer > p:last-child {
     margin-bottom: 0;
 }
+
+/* --------------------------------- MEDIA QUERY --------------------------------- */
+
+@media (min-width: 840px) {
+    footer {
+        padding: 5rem;
+    }
+
+    footer > p {
+        font-size: 2vw;
+    }
+}
