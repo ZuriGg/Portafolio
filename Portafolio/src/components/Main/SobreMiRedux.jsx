@@ -7,7 +7,7 @@ function SobreMiRedux() {
             <section className="seccionSobreMi">
                 <p>
                     Soy un desarrollador web que pasa su tiempo libre
-                    produciendo música y viajando por la naturaleza.
+                    produciendo música y viajando por la naturaleza...
                 </p>
             </section>
         </div>

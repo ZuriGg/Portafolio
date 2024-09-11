@@ -27,3 +27,37 @@ div.contenedorSobreMi > section.seccionSobreMi {
 div.contenedorSobreMi > section.seccionSobreMi > p {
     font-size: 3.9vw;
 }
+
+/* --------------------------------- MEDIA QUERY --------------------------------- */
+
+@media (min-width: 840px) {
+    div.contenedorSobreMi {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        aspect-ratio: 7/4;
+        margin: auto;
+        background-image: url("../../assets/img/nubePrincipal.png");
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    div.contenedorSobreMi > section.seccionSobreMi {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 80%;
+        border-radius: 7%;
+        padding: 5%;
+        color: #7d7d7d;
+        font-weight: bold;
+    }
+
+    div.contenedorSobreMi > section.seccionSobreMi > p {
+        font-size: 250%;
+    }
+}
