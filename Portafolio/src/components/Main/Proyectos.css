@@ -1,14 +1,3 @@
-section.seccionProyectosDestacados > h3 {
-    display: flex;
-    justify-content: center;
-    font-size: clamp(1rem, 7vw, 9rem);
-    margin: auto;
-    margin-bottom: 3vh;
-    text-shadow: 0px 1px 1px hsl(0, 0%, 0%), 0px 2px 2px hsl(0, 0%, 20%),
-        0px 3px 3px hsl(0, 0%, 40%), 0px 4px 4px hsl(0, 0%, 60%),
-        0px 5px 5px hsl(0, 0%, 80%);
-}
-
 section.seccionProyectosDestacados > div.proyectosContainer {
     position: relative;
     display: flex;
@@ -107,7 +96,17 @@ section.seccionProyectosDestacados
     margin-right: auto;
     border-radius: 2rem;
     transition: all 0.2s;
-    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.542);
+    padding: 5px;
+    background-color: hsla(105, 100%, 64%, 0.233);
+
+    box-shadow: 1px 1px 0px hsl(95, 40%, 40%), 1.5px 1.5px 0px hsl(95, 39%, 40%),
+        2px 2px 0px hsl(95, 38%, 40%), 2.5px 2.5px 0px hsl(95, 37%, 40%),
+        3px 3px 0px hsl(95, 30%, 40%), 3.5px 3.5px 0px hsl(95, 29%, 40%),
+        4px 4px 0px hsl(95, 26%, 40%), 4.5px 4.5px 0px hsl(95, 25%, 40%),
+        5px 5px 0px hsl(95, 22%, 40%), 5.5px 5.5px 0px hsl(95, 21%, 40%),
+        6px 6px 0px hsl(95, 20%, 40%), 0.41em 0.41em 20px rgba(0, 0, 0, 0.6),
+        inset -8px -8px 3px rgba(95, 114, 64, 0.5),
+        inset 8px 8px 6px rgba(95, 164, 120, 0.5);
 }
 
 section.seccionProyectosDestacados
@@ -246,6 +245,20 @@ section.seccionProyectosDestacados
     > img.imgLogos {
     width: 20%;
     aspect-ratio: 1/1;
+    transition: all 0.4s;
+}
+
+section.seccionProyectosDestacados
+    > div.proyectosContainer
+    > div
+    > div.cajaProyectos
+    > article
+    > div
+    > div
+    > div.containerLogosProyectos
+    > img.imgLogos:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 section.seccionProyectosDestacados
@@ -258,6 +271,19 @@ section.seccionProyectosDestacados
     > div.containerGithubProyectos {
     width: 50%;
     aspect-ratio: 1/1;
+    transition: all 0.4s;
+}
+
+section.seccionProyectosDestacados
+    > div.proyectosContainer
+    > div
+    > div.cajaProyectos
+    > article
+    > div
+    > div
+    > div.containerGithubProyectos:hover {
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 section.seccionProyectosDestacados
@@ -312,4 +338,16 @@ section.seccionProyectosDestacados
     .proyecto5 {
         order: 3;
     }
+}
+
+section.seccionProyectosDestacados
+    > div.proyectosContainer
+    > div
+    > div.cajaProyectos
+    > article
+    > div
+    > div
+    > div.containerGithubProyectos {
+    width: 30%;
+    aspect-ratio: 1/1;
 }
