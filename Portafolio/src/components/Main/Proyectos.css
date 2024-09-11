@@ -81,7 +81,7 @@ section.seccionProyectosDestacados div.proyectosContainer div > article > p {
     margin-bottom: 1vh;
     align-items: center;
     width: 80%;
-    aspect-ratio: 8/3;
+    height: 15vh;
     font-size: 200%;
 }
 
@@ -92,17 +92,6 @@ section.seccionProyectosDestacados
     > p
     > strong {
     font-size: 85%;
-}
-
-section.seccionProyectosDestacados
-    div.proyectosContainer
-    div
-    > article
-    > p
-    > span {
-    font-size: 130%;
-    font: bold;
-    color: black;
 }
 
 section.seccionProyectosDestacados div.proyectosContainer div > article > div {
