@@ -1,4 +1,13 @@
-section.seccionProyectosDestacados {
+section.seccionProyectosDestacados h3 {
+    display: flex;
+    justify-content: center;
+    font-size: clamp(1rem, 7vw, 9rem);
+    margin: auto;
+    margin-bottom: 3vh;
+}
+
+section.seccionProyectosDestacados > div.proyectosContainer {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -9,15 +18,7 @@ section.seccionProyectosDestacados {
     margin: auto;
 }
 
-section.seccionProyectosDestacados > h3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: clamp(1rem, 6vw, 8rem);
-    margin-bottom: 1vh;
-}
-section.seccionProyectosDestacados > div {
+section.seccionProyectosDestacados div.proyectosContainer div {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -25,7 +26,7 @@ section.seccionProyectosDestacados > div {
     margin: auto;
 }
 
-section.seccionProyectosDestacados > div > article {
+section.seccionProyectosDestacados div.proyectosContainer div > article {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -40,12 +41,12 @@ section.seccionProyectosDestacados > div > article {
     padding-top: 2vh;
 }
 
-section.seccionProyectosDestacados > div > article > h4 {
-    font-size: 250%;
+section.seccionProyectosDestacados div.proyectosContainer div > article > h4 {
+    font-size: 270%;
     margin-bottom: 1vh;
 }
 
-section.seccionProyectosDestacados > div > article > img {
+section.seccionProyectosDestacados div.proyectosContainer div > article > img {
     width: 90%;
     aspect-ratio: 2/1;
     margin-left: auto;
@@ -54,46 +55,82 @@ section.seccionProyectosDestacados > div > article > img {
     transition: all 0.2s;
 }
 
-section.seccionProyectosDestacados > div > article > img:hover {
+section.seccionProyectosDestacados
+    div.proyectosContainer
+    div
+    > article
+    > img:hover {
     cursor: pointer;
 }
 
-section.seccionProyectosDestacados > div > article > img.scale-up {
+section.seccionProyectosDestacados
+    div.proyectosContainer
+    div
+    > article
+    > img.scale-up {
     transform: scale(1.2);
 }
 
-section.seccionProyectosDestacados > div > article > p {
-    margin-top: 2vh;
+section.seccionProyectosDestacados div.proyectosContainer div > article > h5 {
+    margin-top: 1vh;
+    font-size: 200%;
+}
+
+section.seccionProyectosDestacados div.proyectosContainer div > article > p {
+    margin-top: 1vh;
     margin-bottom: 1vh;
-    display: flex;
-    flex-direction: column;
     align-items: center;
     width: 80%;
     aspect-ratio: 8/3;
-    font-size: 160%;
+    font-size: 200%;
 }
 
-section.seccionProyectosDestacados > div > article > p > span {
+section.seccionProyectosDestacados
+    div.proyectosContainer
+    div
+    > article
+    > p
+    > strong {
+    font-size: 85%;
+}
+
+section.seccionProyectosDestacados
+    div.proyectosContainer
+    div
+    > article
+    > p
+    > span {
     font-size: 130%;
     font: bold;
     color: black;
 }
 
-section.seccionProyectosDestacados > div > article > div {
+section.seccionProyectosDestacados div.proyectosContainer div > article > div {
     position: relative;
     height: 25%;
     width: 90%;
 }
 
-section.seccionProyectosDestacados > div > article > div > h5 {
+section.seccionProyectosDestacados
+    div.proyectosContainer
+    div
+    > article
+    > div
+    > h5 {
     display: flex;
     justify-content: center;
     font-size: 250%;
     margin-bottom: 1vh;
 }
 
-section.seccionProyectosDestacados > div > article > div > div {
+section.seccionProyectosDestacados
+    div.proyectosContainer
+    div
+    > article
+    > div
+    > div {
     display: flex;
+    flex-direction: row;
     position: relative;
     align-items: center;
     justify-content: flex-end;
@@ -103,18 +140,21 @@ section.seccionProyectosDestacados > div > article > div > div {
 }
 
 section.seccionProyectosDestacados
-    > div
+    div.proyectosContainer
+    div
     > article
     > div
     > div
     > div.containerLogosProyectos {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
 section.seccionProyectosDestacados
-    > div
+    div.proyectosContainer
+    div
     > article
     > div
     > div
@@ -125,17 +165,19 @@ section.seccionProyectosDestacados
 }
 
 section.seccionProyectosDestacados
-    > div
+    div.proyectosContainer
+    div
     > article
     > div
     > div
     > div.containerGithubProyectos {
-    width: 35%;
+    width: 12%;
     aspect-ratio: 1/1;
 }
 
 section.seccionProyectosDestacados
-    > div
+    div.proyectosContainer
+    div
     > article
     > div
     > div
@@ -143,4 +185,62 @@ section.seccionProyectosDestacados
     > img.imgGithub {
     width: 100%;
     aspect-ratio: 1/1;
+}
+
+/* --------------------------------- MEDIA QUERY --------------------------------- */
+
+@media (min-width: 840px) {
+    section.seccionProyectosDestacados {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        z-index: 1;
+        width: 100%;
+        margin: auto;
+    }
+
+    section.seccionProyectosDestacados h3 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        font-size: 3.5vw;
+        margin-bottom: 1vh;
+    }
+
+    section.seccionProyectosDestacados div.proyectosContainer {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        width: 100%;
+        margin: auto;
+    }
+
+    section.seccionProyectosDestacados div.proyectosContainer > div {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        width: 28%;
+        margin: auto;
+    }
+
+    .proyecto1 {
+        order: 2;
+    }
+    .proyecto2 {
+        order: 1;
+    }
+    .proyecto3 {
+        order: 5;
+    }
+    .proyecto4 {
+        order: 4;
+    }
+    .proyecto5 {
+        order: 3;
+    }
 }

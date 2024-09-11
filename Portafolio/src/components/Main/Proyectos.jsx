@@ -2,13 +2,14 @@ import React, { useRef, useState } from "react";
 import "./Proyectos.css";
 
 function Proyectos({
-    imgProyecto1,
+    imgProyecto,
     nombre,
     descripcion,
     img1,
     img2,
     img3,
     imgGithub,
+    className,
 }) {
     const [isScaled, setIsScaled] = useState(false);
     const hoverTimeout = useRef(null);
@@ -25,20 +26,19 @@ function Proyectos({
     };
 
     return (
-        <div>
+        <div className={className}>
             <article>
                 <h4>{nombre}</h4>
                 <img
                     className={`button ${isScaled ? "scale-up" : ""}`}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}
-                    src={imgProyecto1}
+                    src={imgProyecto}
                     alt=""
                     srcSet=""
                 />
-                <p>
-                    <span>Descripción de proyecto:</span> {descripcion}
-                </p>
+                <h5>Descripción de proyecto:</h5>
+                <p>{descripcion}</p>
                 <div>
                     <h5>Tecnologías</h5>
                     <div>
