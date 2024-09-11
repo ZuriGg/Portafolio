@@ -107,6 +107,7 @@ section.seccionProyectosDestacados
     margin-right: auto;
     border-radius: 2rem;
     transition: all 0.2s;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.542);
 }
 
 section.seccionProyectosDestacados

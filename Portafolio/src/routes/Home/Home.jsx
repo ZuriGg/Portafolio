@@ -44,7 +44,7 @@ function Home({
                         imgGithub={imgGithub}
                         img1={imgHTML}
                         img2={imgCSS}
-                        img3={""}
+                        img3={imgJavaScript}
                     />
                     <Proyectos
                         className="proyecto4"
