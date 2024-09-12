@@ -24,7 +24,7 @@ header > div.headerContentContainer > a > div.nombreContainer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: hsl(206, 33%, 80%);
+    color: #effdff;
 }
 
 header div.headerContentContainer h1 {
@@ -81,14 +81,15 @@ header div.headerContentContainer > div.contactoContainer {
 }
 
 header div.headerContentContainer > div.contactoContainer > p.correo {
-    font-size: 3vw;
+    font-size: 2vh;
+    font-weight: 1000;
     /*     border: solid 0.2vh grey; */
     /*     background-color: rgb(241, 239, 214); */
-    /*     border-radius: 1.2rem; */
-    /*     padding-inline: 4%;
-    padding-block: 0.5%; */
+    border-radius: 1.2rem;
+
     transition: all 0.3s;
-    color: black;
+    color: #000000;
+    text-shadow: 0px 0px 1.5px #000000c7;
 }
 
 header
@@ -215,7 +216,6 @@ header
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.6vh;
     margin: auto;
     margin-top: 1rem;
     width: fit-content;
@@ -226,7 +226,6 @@ header
     > div.logosHeaderContainer
     > div.boxContainer
     > div.inContainer {
-    border-radius: 0.5vh;
     position: relative;
     grid-area: logos;
     display: flex;
@@ -234,7 +233,6 @@ header
     align-items: center;
     width: 100%;
     margin: auto;
-    padding: 0.8vh;
 }
 
 header
@@ -326,7 +324,7 @@ header
     header div.headerContentContainer h1 {
         position: relative;
         width: fit-content;
-        font-size: 8.5vh;
+        font-size: 7vh;
         margin-bottom: 1vh;
         margin-top: 0;
         margin-left: 1vh;
@@ -345,7 +343,7 @@ header
     header div.headerContentContainer h2 {
         position: relative;
         width: fit-content;
-        font-size: 4vh;
+        font-size: 3.5vh;
         margin-left: 1vh;
         margin-right: auto;
         transition: all 0.6s;
@@ -370,21 +368,22 @@ header
         flex-direction: row;
         align-items: center;
         margin-right: 0;
-        width: 100%;
-        padding-inline: 4%;
+        width: fit-content;
+        padding-inline: 0px;
+        margin-left: 1vh;
     }
 
     header div.headerContentContainer > div.contactoContainer > p.correo {
-        font-size: 1.4vw;
-        width: 100%;
+        font-size: 2.8vh;
+        width: fit-content;
     }
 
     header
         div.headerContentContainer
         > div.contactoContainer
         > button.btnEnvCorreo {
-        width: 5vw;
-        margin-left: 0.5vw;
+        width: 6vh;
+        margin-left: 0.5vh;
     }
 
     header div.headerContentContainer > div.contactoContainer > button:hover {
@@ -401,9 +400,9 @@ header
         div.headerContentContainer
         > div.contactoContainer
         > button.btnCopiarEmail {
-        width: 4vw;
-        margin-left: 0.5vw;
-        margin-right: 1vh;
+        width: 4.5vh;
+        margin-left: 0vh;
+        margin-right: 0vh;
     }
 
     /* ------- IMAGEN DE PERFIL ------- */
@@ -446,8 +445,9 @@ header
 
     header div.headerContentContainer > img.imgPerfil {
         grid-area: perfil;
-        width: 50%;
-        animation: cambioSombra 5s linear infinite;
+        width: fit-content;
+        height: 13.5vh;
+        animation: cambioSombra 10s linear infinite;
         transition: all 3s easy-in;
     }
 

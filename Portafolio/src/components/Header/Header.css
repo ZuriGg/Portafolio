@@ -31,27 +31,67 @@ header a {
 }
 
 header nav a {
-    color: hsl(119, 33%, 26%);
+    color: hsl(0, 0%, 0%);
     font-size: 1.5vh;
-    font-weight: 500;
-    text-shadow: 0px 0px 1px hsl(119, 33%, 35%), 0px 0px 1px hsl(119, 33%, 30%),
-        0px 0px 1px hsl(119, 33%, 25%), 0px 0px 1px hsl(119, 33%, 20%),
-        0px 0px 5px hsl(119, 33%, 15%);
+    font-weight: 700;
+    text-shadow: 0px 0px 1px hsl(109, 93%, 35%), 0px 0px 1px hsl(109, 93%, 30%),
+        0px 0px 1px hsl(109, 93%, 25%), 0px 0px 1px hsl(109, 93%, 20%),
+        0px 0px 5px hsl(109, 93%, 15%);
+    animation: cambioSombraTexto 10s linear infinite;
     transition: all 0.3s;
 }
 
+@keyframes cambioSombraTexto {
+    0% {
+        text-shadow: 0px 0px 1px #ff0000;
+    }
+    10% {
+        text-shadow: 0px 0px 1px #ff7f00;
+    }
+    20% {
+        text-shadow: 0px 0px 1px #ffff00;
+    }
+    30% {
+        text-shadow: 0px 0px 1px #7fff00;
+    }
+    40% {
+        text-shadow: 0px 0px 1px #00ff00;
+    }
+    50% {
+        text-shadow: 0px 0px 1px #00ff7f;
+    }
+    60% {
+        text-shadow: 0px 0px 1px #00ffff;
+    }
+    70% {
+        text-shadow: 0px 0px 1px #007fff;
+    }
+    80% {
+        text-shadow: 0px 0px 1px #0000ff;
+    }
+    90% {
+        text-shadow: 0px 0px 1px #7f00ff;
+    }
+    100% {
+        text-shadow: 0px 0px 1px #ff00ff;
+    }
+}
+
 header nav a:hover {
-    text-shadow: 0 0px 1px #000000;
+    text-shadow: 0 0px 2px #000000;
+    color: hsl(0, 0%, 0%);
 }
 
 header nav a.active {
+    color: hsl(0, 0%, 0%);
+
     border: solid 2px;
     border-top: #00000000;
     border-left: #00000000;
     border-right: #00000000;
-    text-shadow: 0px 0px 1px hsl(119, 33%, 35%), 0px 0px 1px hsl(119, 33%, 30%),
-        0px 0px 1px hsl(119, 33%, 25%), 0px 0px 1px hsl(119, 33%, 20%),
-        0px 0px 5px hsl(119, 33%, 15%);
+    text-shadow: 0px 0px 1px hsl(109, 93%, 35%), 0px 0px 1px hsl(109, 93%, 30%),
+        0px 0px 1px hsl(109, 93%, 25%), 0px 0px 1px hsl(109, 93%, 20%),
+        0px 0px 5px hsl(109, 93%, 15%);
     transition: all 0.3s;
 }
 
@@ -64,17 +104,22 @@ header nav a.active {
     }
 
     header nav {
-        width: 80%;
+        width: 95%;
         height: fit-content;
         margin: auto;
     }
 
     header nav a {
-        text-shadow: 0px 1px 1px hsl(0, 0%, 0%), 0px 2px 2px hsl(0, 0%, 20%),
-            0px 3px 3px hsl(0, 0%, 40%), 0px 4px 4px hsl(0, 0%, 60%),
-            0px 5px 5px hsl(0, 0%, 80%);
-        font-size: 2vw;
+        text-shadow: 0px 0px 1px hsl(109, 93%, 35%),
+            0px 0px 1px hsl(109, 93%, 30%), 0px 0px 1px hsl(109, 93%, 25%),
+            0px 0px 1px hsl(109, 93%, 20%), 0px 0px 3px hsl(109, 93%, 15%);
+        font-size: 3vh;
+        margin-right: 3vh;
         transition: all 0.3s;
+    }
+
+    header nav a:last-child {
+        margin-right: 0;
     }
 
     header nav a:hover {
@@ -82,8 +127,44 @@ header nav a.active {
     }
 
     header nav a.active {
-        text-shadow: 0px 1px 1px hsl(0, 0%, 0%), 0px 2px 2px hsl(0, 0%, 20%),
-            0px 3px 3px hsl(0, 0%, 40%), 0px 4px 4px hsl(0, 0%, 60%),
-            0px 5px 5px hsl(0, 0%, 80%);
+        text-shadow: 0px 0px 1px hsl(109, 93%, 35%),
+            0px 0px 1px hsl(109, 93%, 30%), 0px 0px 1px hsl(109, 93%, 25%),
+            0px 0px 1px hsl(109, 93%, 20%), 0px 0px 3px hsl(109, 93%, 15%);
+    }
+
+    @keyframes cambioSombraTexto {
+        0% {
+            text-shadow: 0px 0px 3px #ff0000;
+        }
+        10% {
+            text-shadow: 0px 0px 3px #ff7f00;
+        }
+        20% {
+            text-shadow: 0px 0px 3px #ffff00;
+        }
+        30% {
+            text-shadow: 0px 0px 3px #7fff00;
+        }
+        40% {
+            text-shadow: 0px 0px 3px #00ff00;
+        }
+        50% {
+            text-shadow: 0px 0px 3px #00ff7f;
+        }
+        60% {
+            text-shadow: 0px 0px 3px #00ffff;
+        }
+        70% {
+            text-shadow: 0px 0px 3px #007fff;
+        }
+        80% {
+            text-shadow: 0px 0px 3px #0000ff;
+        }
+        90% {
+            text-shadow: 0px 0px 3px #7f00ff;
+        }
+        100% {
+            text-shadow: 0px 0px 3px #ff00ff;
+        }
     }
 }
