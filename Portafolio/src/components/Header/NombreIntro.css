@@ -24,7 +24,7 @@ header > div.headerContentContainer > a > div.nombreContainer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #c8d2da;
+    color: hsl(206, 33%, 80%);
 }
 
 header div.headerContentContainer h1 {
@@ -33,15 +33,15 @@ header div.headerContentContainer h1 {
     font-size: 7vw;
     margin-bottom: 1vh;
     margin-top: 0.5vh;
-    margin-left: 4vh;
     width: 100%;
     white-space: nowrap;
     line-height: 1.1;
     transition: all 0.8s;
     font-weight: bold;
-    text-shadow: 0 0px 3px #00000038, 0 1px 0 #b4c1cd, 0 2px 0 #a0b1bf,
-        0 3px 0 #8ca0b2, 0 4px 0 #778fa4, 3px 5px 15px rgba(0, 0, 0, 0.1),
-        3px 6px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0px 3px hsla(0, 0%, 0%, 0.396), 0 -1px 0 hsl(206, 20%, 75%),
+        0 -1.5px 0 hsl(206, 20%, 69%), 0 -2px 0 hsl(206, 20%, 62%),
+        0 -2.5px 0 hsl(206, 20%, 55%), -2px -1px 7px hsla(0, 0%, 0%, 0.1),
+        -2px -2px 4px hsla(0, 0%, 0%, 0.3);
 }
 
 header div.headerContentContainer h1:hover {
@@ -51,16 +51,16 @@ header div.headerContentContainer h1:hover {
 header div.headerContentContainer h2 {
     display: flex;
     justify-content: flex-start;
-    margin-left: 4vh;
 
     font-size: 4vw;
     width: 100%;
     transition: all 0.8s;
     font-weight: bold;
     white-space: nowrap;
-    text-shadow: 0 0px 3px #00000038, 0 1px 0 #b4c1cd, 0 2px 0 #a0b1bf,
-        0 3px 0 #8ca0b2, 0 4px 0 #778fa4, 3px 5px 15px rgba(0, 0, 0, 0.1),
-        3px 6px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 0px 3px hsla(0, 0%, 0%, 0.22), 0 -1px 0 hsl(206, 20%, 75%),
+        0 -1.5px 0 hsl(206, 19%, 69%), 0 -2px 0 hsl(206, 20%, 62%),
+        0 -2.5px 0 hsl(206, 20%, 55%), -2px -1px 7px hsla(0, 0%, 0%, 0.1),
+        -2px -2px 4px hsla(0, 0%, 0%, 0.3);
 }
 
 header div.headerContentContainer h2:hover {
@@ -81,7 +81,7 @@ header div.headerContentContainer > div.contactoContainer {
 }
 
 header div.headerContentContainer > div.contactoContainer > p.correo {
-    font-size: 2.7vw;
+    font-size: 2.5vw;
     border: solid 0.2vh grey;
     background-color: rgb(241, 239, 214);
     color: black;
@@ -158,37 +158,37 @@ header
 
 @keyframes cambioSombra {
     0% {
-        box-shadow: 0px 0px 2vh #ff0000;
+        box-shadow: 0px 0px 1vh #ff0000;
     }
     10% {
-        box-shadow: 0px 0px 2vh #ff7f00;
+        box-shadow: 0px 0px 1vh #ff7f00;
     }
     20% {
-        box-shadow: 0px 0px 2vh #ffff00;
+        box-shadow: 0px 0px 1vh #ffff00;
     }
     30% {
-        box-shadow: 0px 0px 2vh #7fff00;
+        box-shadow: 0px 0px 1vh #7fff00;
     }
     40% {
-        box-shadow: 0px 0px 2vh #00ff00;
+        box-shadow: 0px 0px 1vh #00ff00;
     }
     50% {
-        box-shadow: 0px 0px 2vh #00ff7f;
+        box-shadow: 0px 0px 1vh #00ff7f;
     }
     60% {
-        box-shadow: 0px 0px 2vh #00ffff;
+        box-shadow: 0px 0px 1vh #00ffff;
     }
     70% {
-        box-shadow: 0px 0px 2vh #007fff;
+        box-shadow: 0px 0px 1vh #007fff;
     }
     80% {
-        box-shadow: 0px 0px 2vh #0000ff;
+        box-shadow: 0px 0px 1vh #0000ff;
     }
     90% {
-        box-shadow: 0px 0px 2vh #7f00ff;
+        box-shadow: 0px 0px 1vh #7f00ff;
     }
     100% {
-        box-shadow: 0px 0px 2vh #ff00ff;
+        box-shadow: 0px 0px 1vh #ff00ff;
     }
 }
 
@@ -221,20 +221,6 @@ header
     margin: auto;
     margin-top: 1rem;
     width: fit-content;
-    background-color: hsl(95, 59%, 75%);
-    box-shadow: 1px 1px 0px hsl(95, 40%, 40%), 1.2px 1.2px 0px hsl(95, 39%, 40%),
-        1.4px 1.4px 0px hsl(95, 38%, 40%), 1.6px 1.6px 0px hsl(95, 37%, 40%),
-        1.8px 1.8px 0px hsl(95, 36%, 40%), 2px 2px 0px hsl(95, 35%, 40%),
-        2.2px 2.2px 0px hsl(95, 34%, 40%), 2.4px 2.4px 0px hsl(95, 33%, 40%),
-        2.6px 2.6px 0px hsl(95, 32%, 40%), 2.8px 2.8px 0px hsl(95, 31%, 40%),
-        3px 3px 0px hsl(95, 30%, 40%), 3.2px 3.2px 0px hsl(95, 29%, 40%),
-        3.4px 3.4px 0px hsl(95, 28%, 40%), 3.6px 3.6px 0px hsl(95, 27%, 40%),
-        3.8px 3.8px 0px hsl(95, 26%, 40%), 4px 4px 0px hsl(95, 25%, 40%),
-        4.2px 4.2px 0px hsl(95, 24%, 40%), 4.4px 4.4px 0px hsl(95, 23%, 40%),
-        4.6px 4.6px 0px hsl(95, 22%, 40%), 4.8px 4.8px 0px hsl(95, 21%, 40%),
-        5px 5px 0px hsl(95, 20%, 40%), 0.41em 0.41em 20px rgba(0, 0, 0, 0.6),
-        inset -8px -8px 12px rgba(95, 114, 64, 0.5),
-        inset 8px 8px 12px rgba(95, 164, 120, 0.5);
 }
 
 header
@@ -251,20 +237,6 @@ header
     width: 100%;
     margin: auto;
     padding: 0.8vh;
-    background-color: hsl(95, 100%, 85%);
-    box-shadow: inset 1px 1px 0px hsl(95, 40%, 40%),
-        inset 1.2px 1.2px 0px hsl(95, 40%, 40%),
-        inset 1.4px 1.4px 0px hsl(95, 40%, 40%),
-        inset 1.6px 1.6px 0px hsl(95, 40%, 40%),
-        inset 1.8px 1.8px 0px hsl(95, 40%, 40%),
-        inset 2px 2px 0px hsl(95, 40%, 40%),
-        inset 2.2px 2.2px 0px hsl(95, 40%, 40%),
-        inset 2.4px 2.4px 0px hsl(95, 40%, 40%),
-        inset 2.6px 2.6px 0px hsl(95, 40%, 40%),
-        inset 2.8px 2.8px 10px hsl(95, 40%, 40%),
-        inset 3px 3px 10px hsl(95, 40%, 40%),
-        -8px -8px 12px rgba(95, 114, 64, 0.5),
-        8px 8px 12px rgba(95, 164, 120, 0.5);
 }
 
 header
@@ -333,40 +305,6 @@ header
         > div.logosHeaderContainer
         > div.boxContainer {
         padding: 1vh;
-        box-shadow: 1px 1px 0px hsl(95, 40%, 40%),
-            1.5px 1.5px 0px hsl(95, 39%, 40%), 2px 2px 0px hsl(95, 38%, 40%),
-            2.5px 2.5px 0px hsl(95, 37%, 40%), 3px 3px 0px hsl(95, 36%, 40%),
-            3.5px 3.5px 0px hsl(95, 35%, 40%), 4px 4px 0px hsl(95, 34%, 40%),
-            4.5px 4.5px 0px hsl(95, 33%, 40%), 5px 5px 0px hsl(95, 32%, 40%),
-            5.5px 5.5px 0px hsl(95, 31%, 40%), 6px 6px 0px hsl(95, 30%, 40%),
-            6.5px 6.5px 0px hsl(95, 29%, 40%), 7px 7px 0px hsl(95, 28%, 40%),
-            7.5px 7.5px 0px hsl(95, 27%, 40%), 8px 8px 0px hsl(95, 26%, 40%),
-            8.5px 8.5px 0px hsl(95, 25%, 40%), 9px 9px 0px hsl(95, 24%, 40%),
-            9.5px 9.5px 0px hsl(95, 23%, 40%), 10px 10px 0px hsl(95, 22%, 40%),
-            10.5px 10.5px 0px hsl(95, 21%, 40%), 11px 11px 0px hsl(95, 20%, 40%),
-            0.41em 0.41em 20px rgba(0, 0, 0, 0.6),
-            inset -8px -8px 12px rgba(95, 114, 64, 0.5),
-            inset 8px 8px 12px rgba(95, 164, 120, 0.5);
-    }
-
-    header
-        div.headerContentContainer
-        > div.logosHeaderContainer
-        > div.boxContainer
-        > div.inContainer {
-        box-shadow: inset 1px 1px 0px hsl(95, 40%, 40%),
-            inset 1.5px 1.5px 0px hsl(95, 40%, 40%),
-            inset 2px 2px 0px hsl(95, 40%, 40%),
-            inset 2.5px 2.5px 0px hsl(95, 40%, 40%),
-            inset 3px 3px 0px hsl(95, 40%, 40%),
-            inset 3.5px 3.5px 0px hsl(95, 40%, 40%),
-            inset 4px 4px 0px hsl(95, 40%, 40%),
-            inset 4.5px 4.5px 0px hsl(95, 40%, 40%),
-            inset 5px 5px 0px hsl(95, 40%, 40%),
-            inset 5.5px 5.5px 10px hsl(95, 40%, 40%),
-            inset 6px 6px 10px hsl(95, 40%, 40%),
-            -8px -8px 12px rgba(95, 114, 64, 0.5),
-            8px 8px 12px rgba(95, 164, 120, 0.5);
     }
 
     header div.headerContentContainer {
@@ -411,9 +349,11 @@ header
         margin-left: 0;
         font-size: 2.5vw;
         transition: all 0.6s;
-        text-shadow: 0 0px 3px #00000038, 0 -1px 0 #b4c1cd, 0 -2.5px 0 #a0b1bf,
-            0 -4px 0 #8ca0b2, 0 -5.5px 0 #778fa4,
-            3px 5px 15px rgba(0, 0, 0, 0.125), 3px 6px 5px rgba(0, 0, 0, 0.243);
+        text-shadow: 0 0px 3px hsla(0, 0%, 0%, 0.22),
+            0 -1px 0 hsl(209, 20%, 75%), 0 -2.5px 0 hsl(207, 20%, 69%),
+            0 -4px 0 hsl(208, 20%, 62%), 0 -5.5px 0 hsl(208, 20%, 55%),
+            3px 5px 15px hsla(0, 0%, 0%, 0.125),
+            3px 6px 5px hsla(0, 0%, 0%, 0.243);
     }
 
     header div.headerContentContainer h2:hover {
@@ -470,37 +410,37 @@ header
 
     @keyframes cambioSombra {
         0% {
-            box-shadow: 0px 0px 3vh #ff0000;
+            box-shadow: 0px 0px 1vh #ff0000;
         }
         10% {
-            box-shadow: 0px 0px 3vh #ff7f00;
+            box-shadow: 0px 0px 1vh #ff7f00;
         }
         20% {
-            box-shadow: 0px 0px 3vh #ffff00;
+            box-shadow: 0px 0px 1vh #ffff00;
         }
         30% {
-            box-shadow: 0px 0px 3vh #7fff00;
+            box-shadow: 0px 0px 1vh #7fff00;
         }
         40% {
-            box-shadow: 0px 0px 3vh #00ff00;
+            box-shadow: 0px 0px 1vh #00ff00;
         }
         50% {
-            box-shadow: 0px 0px 3vh #00ff7f;
+            box-shadow: 0px 0px 1vh #00ff7f;
         }
         60% {
-            box-shadow: 0px 0px 3vh #00ffff;
+            box-shadow: 0px 0px 1vh #00ffff;
         }
         70% {
-            box-shadow: 0px 0px 3vh #007fff;
+            box-shadow: 0px 0px 1vh #007fff;
         }
         80% {
-            box-shadow: 0px 0px 3vh #0000ff;
+            box-shadow: 0px 0px 1vh #0000ff;
         }
         90% {
-            box-shadow: 0px 0px 3vh #7f00ff;
+            box-shadow: 0px 0px 1vh #7f00ff;
         }
         100% {
-            box-shadow: 0px 0px 3vh #ff00ff;
+            box-shadow: 0px 0px 1vh #ff00ff;
         }
     }
 

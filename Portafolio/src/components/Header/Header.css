@@ -31,10 +31,11 @@ header a {
 }
 
 header nav a {
-    color: #bdcedc;
-    text-shadow: 0 1px 0 #b4c1cd, 0 1.5px 0 #a0b1bf, 0 2px 0 #8ca0b2,
-        3px 5px 5px rgba(0, 0, 0, 0.3);
-    font-size: clamp(1.3rem, 10vw, 2vw);
+    color: #000000;
+    font-size: 1.5vh;
+    text-shadow: 0px 1px 1px hsl(0, 0%, 0%), 0px 2px 2px hsl(0, 0%, 20%),
+        0px 3px 3px hsl(0, 0%, 40%), 0px 4px 4px hsl(0, 0%, 60%),
+        0px 5px 5px hsl(0, 0%, 80%);
     transition: all 0.3s;
 }
 
@@ -47,8 +48,9 @@ header nav a.active {
     border-top: #00000000;
     border-left: #00000000;
     border-right: #00000000;
-    text-shadow: 0 1px 0 #b4c1cd, 0 1.5px 0 #a0b1bf, 0 px 0 #8ca0b2,
-        2px 4px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 0px 1px 1px hsl(0, 0%, 0%), 0px 2px 2px hsl(0, 0%, 20%),
+        0px 3px 3px hsl(0, 0%, 40%), 0px 4px 4px hsl(0, 0%, 60%),
+        0px 5px 5px hsl(0, 0%, 80%);
 }
 
 /* ------------------------------------------ MEDIA QUERY ------------------------------------------ */
@@ -66,8 +68,9 @@ header nav a.active {
     }
 
     header nav a {
-        text-shadow: 0 1px 0 #b4c1cd, 0 2px 0 #a0b1bf, 0 3px 0 #8ca0b2,
-            2px 4px 4px rgba(0, 0, 0, 0.3);
+        text-shadow: 0px 1px 1px hsl(0, 0%, 0%), 0px 2px 2px hsl(0, 0%, 20%),
+            0px 3px 3px hsl(0, 0%, 40%), 0px 4px 4px hsl(0, 0%, 60%),
+            0px 5px 5px hsl(0, 0%, 80%);
         font-size: 2vw;
         transition: all 0.3s;
     }
@@ -77,7 +80,8 @@ header nav a.active {
     }
 
     header nav a.active {
-        text-shadow: 0 1px 0 #b4c1cd, 0 2px 0 #a0b1bf, 0 3px 0 #8ca0b2,
-            2px 4px 4px rgba(0, 0, 0, 0.3);
+        text-shadow: 0px 1px 1px hsl(0, 0%, 0%), 0px 2px 2px hsl(0, 0%, 20%),
+            0px 3px 3px hsl(0, 0%, 40%), 0px 4px 4px hsl(0, 0%, 60%),
+            0px 5px 5px hsl(0, 0%, 80%);
     }
 }
