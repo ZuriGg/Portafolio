@@ -81,7 +81,7 @@ header div.headerContentContainer > div.contactoContainer {
 }
 
 header div.headerContentContainer > div.contactoContainer > p.correo {
-    font-size: 2vh;
+    font-size: 1.5vh;
     font-weight: 1000;
     /*     border: solid 0.2vh grey; */
     /*     background-color: rgb(241, 239, 214); */
