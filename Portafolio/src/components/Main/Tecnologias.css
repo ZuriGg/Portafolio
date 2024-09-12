@@ -91,11 +91,6 @@ section.seccionTecnologias
         padding: 4vw;
     }
 
-    section.seccionTecnologias > h3 {
-        font-size: 4vw;
-        margin-bottom: 1rem;
-    }
-
     section.cajaTecnologias > div.seccionBtnTec {
         display: flex;
         justify-content: space-evenly;

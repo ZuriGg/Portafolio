@@ -6,6 +6,8 @@ div.contenedorSobreMi {
     width: 95%;
     aspect-ratio: 7/4;
     margin: auto;
+    margin-top: -3vh;
+    margin-bottom: -2vh;
     background-image: url("../../assets/img/nubePrincipal.png");
     background-size: contain;
     background-position: center;

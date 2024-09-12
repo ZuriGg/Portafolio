@@ -303,9 +303,9 @@ section.seccionProyectosDestacados
 /* --------------------------------- MEDIA QUERY --------------------------------- */
 
 @media (min-width: 840px) {
-    section.seccionProyectosDestacados h3 {
-        font-size: 3.5vw;
-    }
+    /*     section.seccionProyectosDestacados h3 {
+        font-size: 5vh;
+    } */
 
     section.seccionProyectosDestacados div.proyectosContainer {
         position: relative;

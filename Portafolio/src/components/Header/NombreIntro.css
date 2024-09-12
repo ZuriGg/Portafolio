@@ -38,7 +38,7 @@ header div.headerContentContainer h1 {
     line-height: 1.1;
     transition: all 0.8s;
     font-weight: bold;
-    text-shadow: 0 0px 3px hsla(0, 0%, 0%, 0.396), 0 -1px 0 hsl(206, 20%, 75%),
+    text-shadow: 0 0px 3px hsla(0, 0%, 0%, 0.68), 0 -1px 0 hsl(206, 20%, 75%),
         0 -1.5px 0 hsl(206, 20%, 69%), 0 -2px 0 hsl(206, 20%, 62%),
         0 -2.5px 0 hsl(206, 20%, 55%), -2px -1px 7px hsla(0, 0%, 0%, 0.1),
         -2px -2px 4px hsla(0, 0%, 0%, 0.3);
@@ -57,7 +57,7 @@ header div.headerContentContainer h2 {
     transition: all 0.8s;
     font-weight: bold;
     white-space: nowrap;
-    text-shadow: 0 0px 3px hsla(0, 0%, 0%, 0.22), 0 -1px 0 hsl(206, 20%, 75%),
+    text-shadow: 0 0px 3px hsla(0, 0%, 0%, 0.68), 0 -1px 0 hsl(206, 20%, 75%),
         0 -1.5px 0 hsl(206, 19%, 69%), 0 -2px 0 hsl(206, 20%, 62%),
         0 -2.5px 0 hsl(206, 20%, 55%), -2px -1px 7px hsla(0, 0%, 0%, 0.1),
         -2px -2px 4px hsla(0, 0%, 0%, 0.3);
@@ -81,16 +81,14 @@ header div.headerContentContainer > div.contactoContainer {
 }
 
 header div.headerContentContainer > div.contactoContainer > p.correo {
-    font-size: 2.5vw;
-    border: solid 0.2vh grey;
-    background-color: rgb(241, 239, 214);
-    color: black;
-    border-radius: 1.2rem;
-    padding-inline: 4%;
-    padding-block: 0.5%;
-    margin-right: 0.3rem;
+    font-size: 3vw;
+    /*     border: solid 0.2vh grey; */
+    /*     background-color: rgb(241, 239, 214); */
+    /*     border-radius: 1.2rem; */
+    /*     padding-inline: 4%;
+    padding-block: 0.5%; */
     transition: all 0.3s;
-    font-weight: bold;
+    color: black;
 }
 
 header
@@ -328,13 +326,14 @@ header
     header div.headerContentContainer h1 {
         position: relative;
         width: fit-content;
-        font-size: 4vw;
+        font-size: 8.5vh;
         margin-bottom: 1vh;
         margin-top: 0;
-        margin-left: 0;
+        margin-left: 1vh;
+        margin-right: auto;
         transition: all 0.8s;
-        text-shadow: 0 0px 3px #00000038, 0 -1px 0 #b4c1cd, 0 -2.5px 0 #a0b1bf,
-            0 -4px 0 #8ca0b2, 0 -5.5px 0 #778fa4,
+        text-shadow: 0 0px 3px hsla(0, 0%, 0%, 0.511), 0 -1px 0 #b4c1cd,
+            0 -2.5px 0 #a0b1bf, 0 -4px 0 #8ca0b2, 0 -5.5px 0 #778fa4,
             3px 5px 15px rgba(0, 0, 0, 0.125), 3px 6px 5px rgba(0, 0, 0, 0.243);
     }
 
@@ -346,10 +345,11 @@ header
     header div.headerContentContainer h2 {
         position: relative;
         width: fit-content;
-        margin-left: 0;
-        font-size: 2.5vw;
+        font-size: 4vh;
+        margin-left: 1vh;
+        margin-right: auto;
         transition: all 0.6s;
-        text-shadow: 0 0px 3px hsla(0, 0%, 0%, 0.22),
+        text-shadow: 0 0px 3px hsla(0, 0%, 0%, 0.511),
             0 -1px 0 hsl(209, 20%, 75%), 0 -2.5px 0 hsl(207, 20%, 69%),
             0 -4px 0 hsl(208, 20%, 62%), 0 -5.5px 0 hsl(208, 20%, 55%),
             3px 5px 15px hsla(0, 0%, 0%, 0.125),
