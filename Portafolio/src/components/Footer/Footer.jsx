@@ -3,10 +3,19 @@ import "./Footer.css";
 function Footer() {
     return (
         <footer>
-            <p>Programado con: React y CSS</p>
-            <p>Codificado en: Visual Studio Code</p>
-            <p>Desplegado en: Vercel.</p>
-            <p>Todo el texto está estilizado con la tipografía: SUSE.</p>
+            <p>
+                Programado con: <span>React y CSS</span>.
+            </p>
+            <p>
+                Codificado en: <span> Visual Studio Code</span>.
+            </p>
+            <p>
+                Desplegado en: <span>Vercel</span>.
+            </p>
+            <p>
+                Texto estilizado con: <span>SUSE y</span>
+                <span className="cascadiaType"> Cascadia Code</span>.
+            </p>
         </footer>
     );
 }

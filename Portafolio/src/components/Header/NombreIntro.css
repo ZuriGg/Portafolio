@@ -83,6 +83,7 @@ header div.headerContentContainer > div.contactoContainer {
 header div.headerContentContainer > div.contactoContainer > p.correo {
     font-size: 1.5vh;
     font-weight: 1000;
+    font-family: "Cascadia Code", monospace;
     /*     border: solid 0.2vh grey; */
     /*     background-color: rgb(241, 239, 214); */
     border-radius: 1.2rem;

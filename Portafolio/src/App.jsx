@@ -14,7 +14,7 @@ import Proyectos from "./routes/Proyectos/Proyectos.jsx";
 import Tecnologias from "./routes/Tecnologias/Tecnologias.jsx";
 
 //Imagenes
-import imgPerfil from "./assets/img/fotoPerfil2.png";
+import imgPerfil from "./assets/img/fotoPerfil2.webp";
 import imgEnviar from "./assets/img/enviar.png";
 import imgCopiar from "./assets/img/copiar.png";
 import imgGithub from "./assets/img/gitHubLogo.png";

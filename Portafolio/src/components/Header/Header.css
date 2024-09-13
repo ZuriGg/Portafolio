@@ -31,9 +31,10 @@ header a {
 }
 
 header nav a {
+    font-family: "Cascadia Code", monospace;
     color: hsl(0, 0%, 0%);
     font-size: 1.3vh;
-    font-weight: 700;
+
     text-shadow: 0px 0px 1px hsl(109, 93%, 35%), 0px 0px 1px hsl(109, 93%, 30%),
         0px 0px 1px hsl(109, 93%, 25%), 0px 0px 1px hsl(109, 93%, 20%),
         0px 0px 5px hsl(109, 93%, 15%);

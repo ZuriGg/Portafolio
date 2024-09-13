@@ -1,4 +1,58 @@
-@import url("https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap");
+@font-face {
+    font-family: "Cascadia Code";
+    src: url("./assets/fonts/Cascadia.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "SUSE";
+    src: url("./assets/fonts/SUSE-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+/* @font-face {
+    font-family: "SUSE";
+    src: url("./assets/fonts/SUSE-ExtraBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+} */
+/* @font-face {
+    font-family: "SUSE";
+    src: url("./assets/fonts/SUSE-ExtraLight.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+} */
+/* @font-face {
+    font-family: "SUSE";
+    src: url("./assets/fonts/SUSE-Light.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+} */
+/* @font-face {
+    font-family: "SUSE";
+    src: url("./assets/fonts/SUSE-Medium.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+} */
+/* @font-face {
+    font-family: "SUSE";
+    src: url("./assets/fonts/SUSE-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+} */
+/* @font-face {
+    font-family: "SUSE";
+    src: url("./assets/fonts/SUSE-SemiBold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+} */
+/* @font-face {
+    font-family: "SUSE";
+    src: url("./assets/fonts/SUSE-Thin.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+} */
 
 :root {
     font-family: "SUSE", sans-serif;
