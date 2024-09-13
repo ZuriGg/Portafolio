@@ -4,8 +4,10 @@ import "./App.css";
 
 import Header from "./components/Header/Header.jsx";
 import Home from "./routes/Home/Home.jsx";
-import Cesped from "./components/FondoPantalla/Cesped.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+
+import Nubes from "./components/FondoPantalla/Nubes.jsx";
+import Cesped from "./components/FondoPantalla/Cesped.jsx";
 
 import Contacto from "./routes/Contacto/Contacto.jsx";
 import Documentacion from "./routes/Documentacion/Documentacion.jsx";
@@ -29,12 +31,10 @@ import imgReact from "./assets/img/reactLogo.png";
 
 import imgCV from "./assets/img/cvLogo.png";
 
-import imgProyecto1 from "./assets/img/proyectoPokeApi.png";
-import imgEjemplo from "./assets/img/imagenDeEjemplo.png";
+import imgProyecto1 from "./assets/img/proyectoPokeApi.webp";
+import imgEjemplo from "./assets/img/imagenDeEjemplo.webp";
 
-import imgNube from "./assets/img/nube1.png";
-
-import Nubes from "./components/FondoPantalla/Nubes.jsx";
+import imgNube from "./assets/img/nube1.webp";
 
 function App() {
     const location = useLocation();
