@@ -444,7 +444,7 @@ header
         }
     }
 
-    header div.headerContentContainer > img.imgPerfil {
+    header div.headerContentContainer img.imgPerfil {
         grid-area: perfil;
         width: fit-content;
         height: 13.5vh;
@@ -452,7 +452,7 @@ header
         transition: all 3s easy-in;
     }
 
-    header div.headerContentContainer > img.imgPerfil:hover {
+    header div.headerContentContainer img.imgPerfil:hover {
         transform: scale(1.3);
     }
 
