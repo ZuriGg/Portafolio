@@ -39,29 +39,6 @@ import imgNube from "./assets/img/nube1.webp";
 function App() {
     const location = useLocation();
 
-    /*     const [audioPlayed, setAudioPlayed] = useState(false);
-
-    const playMusic = () => {
-        if (!audioPlayed) {
-            const audio = new Audio("/path/to/your/music.mp3");
-            audio.play();
-            setAudioPlayed(true);
-        }
-    };
-
-    const handleMouseMove = () => {
-        playMusic();
-        document.removeEventListener("mousemove", handleMouseMove);
-    };
-
-    React.useEffect(() => {
-        document.addEventListener("mousemove", handleMouseMove);
-
-        return () => {
-            document.removeEventListener("mousemove", handleMouseMove);
-        };
-    }, []); */
-
     useEffect(() => {
         if (location.pathname === "/") {
             document.title = "smanzano.dev";
