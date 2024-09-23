@@ -15,8 +15,8 @@ function NombreIntro({
         window.location.href = mailtoLink;
     };
 
-    const redirigir = () => {
-        window.location.href = "https://github.com/ZuriGg";
+    const handleRedirigir = (url) => {
+        window.open(url, "_blank", "noopener,noreferrer");
     };
 
     return (
@@ -50,22 +50,36 @@ function NombreIntro({
             <div className="logosHeaderContainer">
                 <div className="boxContainer">
                     <div className="inContainer">
-                        <button onClick={redirigir}>
+                        <button
+                            onClick={() =>
+                                handleRedirigir("https://github.com/ZuriGg")
+                            }
+                        >
                             <img
                                 className="imgLogoHeader"
                                 src={imgGithub}
-                                alt=""
+                                alt="GitHub"
                             />
                         </button>
-                        <button>
+                        <button
+                            onClick={() =>
+                                handleRedirigir(
+                                    "https://www.linkedin.com/in/sergio-manzano-esclapez/"
+                                )
+                            }
+                        >
                             <img
                                 className="imgLogoHeader"
                                 src={imgLinkedin}
-                                alt=""
+                                alt="LinkedIn"
                             />
                         </button>
-                        <button>
-                            <img className="imgLogoHeader" src={imgCV} alt="" />
+                        <button onClick={() => handleRedirigir("/cv.pdf")}>
+                            <img
+                                className="imgLogoHeader"
+                                src={imgCV}
+                                alt="CV"
+                            />
                         </button>
                     </div>
                 </div>
