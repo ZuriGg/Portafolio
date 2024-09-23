@@ -2,23 +2,30 @@ import React, { useState, useEffect } from "react";
 import "./SobreMiRedux.css";
 
 function SobreMiRedux() {
-    const [nubePosX, setNubePosX] = useState(50);
+    const [nubePosX, setNubePosX] = useState(50); // Comienza en el centro
 
     useEffect(() => {
         const handleMouseMove = (e) => {
-            const mouseX = e.clientX;
-            const screenWidth = window.innerWidth;
+            const mouseX = e.clientX; // Obtener la posición X del ratón
+            const screenWidth = window.innerWidth; // Obtener el ancho de la ventana
 
-            const centerX = screenWidth / 2;
-            const maxShift = 50;
+            const nubeWidth = 10; // Ancho de la nube en porcentaje
 
-            let offset = ((mouseX - centerX) / centerX) * maxShift;
+            // Convertir la posición del ratón a porcentaje
+            let newPosX = (mouseX / screenWidth) * 100;
 
-            let newPosX = 50 + offset;
+            // Limitar el rango de movimiento
+            const minLimit = 10 + nubeWidth / 2; // Límite izquierdo (5% para una nube del 10%)
+            const maxLimit = 90 - nubeWidth / 2; // Límite derecho (90% para una nube del 10%)
 
-            newPosX = Math.max(35, Math.min(newPosX, 65));
+            // Ajustar la nueva posición si excede los límites
+            if (newPosX < minLimit) {
+                newPosX = minLimit; // Limitar movimiento a la izquierda
+            } else if (newPosX > maxLimit) {
+                newPosX = maxLimit; // Limitar movimiento a la derecha
+            }
 
-            setNubePosX(newPosX);
+            setNubePosX(newPosX); // Actualizar la posición de la nube
         };
 
         window.addEventListener("mousemove", handleMouseMove);
@@ -31,7 +38,7 @@ function SobreMiRedux() {
     return (
         <div
             className="contenedorSobreMi"
-            style={{ transform: `translateX(${nubePosX - 50}%)` }}
+            style={{ transform: `translateX(${nubePosX - 50}vw)` }} // Mover la nube al puntero del ratón
         >
             <section className="seccionSobreMi">
                 <p>
