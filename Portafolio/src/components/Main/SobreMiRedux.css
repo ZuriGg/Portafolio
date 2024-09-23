@@ -12,6 +12,8 @@ div.contenedorSobreMi {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+    transition: transform 1.5s ease-out;
+    overflow: hidden;
 }
 
 div.contenedorSobreMi > section.seccionSobreMi {

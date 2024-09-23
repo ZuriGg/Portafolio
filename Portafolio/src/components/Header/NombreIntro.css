@@ -168,7 +168,10 @@ header div.headerContentContainer h1 {
 }
 
 header div.headerContentContainer h1:hover {
+    transition: all 0.3s linear;
+
     text-shadow: 0 0px 2px #000000;
+    animation: cambioTexto linear infinite;
 }
 
 header div.headerContentContainer h2 {

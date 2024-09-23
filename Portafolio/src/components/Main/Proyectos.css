@@ -121,10 +121,12 @@ section.seccionProyectosDestacados
 section.seccionProyectosDestacados
     > div.proyectosContainer
     > div
+    > div.cajaProyectos
     > article
-    div.cajaProyectos
     > img.scale-up {
-    transform: scale(1.2);
+    transform: scale(1.5);
+    box-shadow: none;
+    padding: 0%;
 }
 
 section.seccionProyectosDestacados
