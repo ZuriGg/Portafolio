@@ -10,6 +10,8 @@ function Proyectos({
     img3,
     imgGithub,
     className,
+    urlGithub,
+    urlImg,
 }) {
     const [isScaled, setIsScaled] = useState(false);
     const hoverTimeout = useRef(null);
@@ -25,6 +27,12 @@ function Proyectos({
         setIsScaled(false);
     };
 
+    const handleLinkImg = (urlImg) => {
+        if (urlImg) {
+            window.open(urlImg, "_blank");
+        }
+    };
+
     return (
         <div className={className}>
             <div className="cajaProyectos">
@@ -32,6 +40,7 @@ function Proyectos({
                     <h4>{nombre}</h4>
                     <img
                         className={`button ${isScaled ? "scale-up" : ""}`}
+                        onClick={handleLinkImg(urlImg)}
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                         src={imgProyecto}
@@ -64,13 +73,18 @@ function Proyectos({
                                 />
                             </div>
                             <div className="containerGithubProyectos">
-                                {" "}
-                                <img
-                                    className="imgGithub"
-                                    src={imgGithub}
-                                    alt=""
-                                    srcSet=""
-                                />
+                                <a
+                                    href={urlGithub}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <img
+                                        className="imgGithub"
+                                        src={imgGithub}
+                                        alt=""
+                                        srcSet=""
+                                    />
+                                </a>
                             </div>
                         </div>
                     </div>

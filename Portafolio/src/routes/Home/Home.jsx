@@ -35,6 +35,8 @@ function Home({
                         img1={imgHTML}
                         img2={imgCSS}
                         img3={imgJavaScript}
+                        urlGithub="https://github.com/ZuriGg/Pokedex-funcional"
+                        urlImg="https://poke-evo-lution.vercel.app/"
                     />
                     <Proyectos
                         className="proyecto2"

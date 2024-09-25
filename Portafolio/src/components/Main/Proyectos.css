@@ -297,6 +297,7 @@ section.seccionProyectosDestacados
     > div
     > div
     > div.containerGithubProyectos
+    a
     > img.imgGithub {
     width: 100%;
     aspect-ratio: 1/1;
