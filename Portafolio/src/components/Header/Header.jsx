@@ -16,48 +16,42 @@ function Header({
                 <nav>
                     <NavLink
                         to="/"
-                        exact
-                        activeClassName="active"
+                        activeclassname="active"
                         className="nav-link"
                     >
                         Home
                     </NavLink>
                     <NavLink
                         to="/contacto"
-                        exact
-                        activeClassName="active"
+                        activeclassname="active"
                         className="nav-link"
                     >
                         Contacto
                     </NavLink>
                     <NavLink
                         to="/sobre-mi"
-                        exact
-                        activeClassName="active"
+                        activeclassname="active"
                         className="nav-link"
                     >
                         Sobre mí
                     </NavLink>
                     <NavLink
                         to="/proyectos"
-                        exact
-                        activeClassName="active"
+                        activeclassname="active"
                         className="nav-link"
                     >
                         Proyectos
                     </NavLink>
                     <NavLink
                         to="/tecnologias"
-                        exact
-                        activeClassName="active"
+                        activeclassname="active"
                         className="nav-link"
                     >
                         Tecnologías
                     </NavLink>
                     <NavLink
                         to="/documentacion"
-                        exact
-                        activeClassName="active"
+                        activeclassname="active"
                         className="nav-link"
                     >
                         Documentación

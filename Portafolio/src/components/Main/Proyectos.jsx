@@ -27,7 +27,7 @@ function Proyectos({
         setIsScaled(false);
     };
 
-    const handleLinkImg = (urlImg) => {
+    const handleLinkImg = () => {
         if (urlImg) {
             window.open(urlImg, "_blank");
         }
@@ -40,7 +40,7 @@ function Proyectos({
                     <h4>{nombre}</h4>
                     <img
                         className={`button ${isScaled ? "scale-up" : ""}`}
-                        onClick={handleLinkImg(urlImg)}
+                        onClick={handleLinkImg}
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}
                         src={imgProyecto}
