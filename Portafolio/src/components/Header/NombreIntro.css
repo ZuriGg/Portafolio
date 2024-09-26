@@ -26,7 +26,7 @@ header > div.headerContentContainer > a > div.nombreContainer {
     align-items: center;
 }
 
-@keyframes cambioTexto {
+/* @keyframes cambioTexto {
     0% {
         color: #ff0000;
     }
@@ -151,7 +151,7 @@ header > div.headerContentContainer > a > div.nombreContainer {
             -2px -1px 7px hsla(300, 100%, 0%, 0.1),
             -2px -2px 4px hsla(300, 100%, 0%, 0.3);
     }
-}
+} */
 
 header div.headerContentContainer h1 {
     display: flex;
@@ -162,16 +162,17 @@ header div.headerContentContainer h1 {
     width: 100%;
     white-space: nowrap;
     line-height: 1.1;
-    animation: cambio3D 20s linear infinite;
-    transition: all 0.3s linear;
+    color: hsl(156, 100%, 50%);
+    text-shadow: 0px 0px 3px hsla(0, 0%, 0%, 0.441),
+        1px 1px 0 hsl(156, 100%, 45%), 2px 2px 0 hsl(156, 100%, 40%),
+        3px 3px 0 hsl(156, 100%, 35%), 4px 4px 0 hsl(156, 100%, 30%),
+        -2px 1px 7px hsla(0, 0%, 0%, 0.1), -2px 2px 4px hsla(0, 0%, 0%, 0.3);
+    transition: all 0.2s linear;
     font-weight: bold;
 }
 
 header div.headerContentContainer h1:hover {
-    transition: all 0.3s linear;
-
     text-shadow: 0 0px 2px #000000;
-    animation: cambioTexto linear infinite;
 }
 
 header div.headerContentContainer h2 {
@@ -181,13 +182,16 @@ header div.headerContentContainer h2 {
     width: 100%;
     font-weight: bold;
     white-space: nowrap;
-    animation: cambio3D 20s linear infinite;
-    transition: all 0.3s linear;
+    color: hsl(156, 100%, 50%);
+    text-shadow: 0px 0px 3px hsla(0, 0%, 0%, 0.441),
+        1px 1px 0 hsl(156, 100%, 45%), 2px 2px 0 hsl(156, 100%, 40%),
+        3px 3px 0 hsl(156, 100%, 35%), 4px 4px 0 hsl(156, 100%, 30%),
+        -2px 1px 7px hsla(0, 0%, 0%, 0.1), -2px 2px 4px hsla(0, 0%, 0%, 0.3);
+    transition: all 0.2s linear;
 }
 
 header div.headerContentContainer h2:hover {
     text-shadow: 0 0px 2px #000000;
-    animation: cambioTexto linear infinite;
 }
 
 /* ------- CONTACTO ------- */

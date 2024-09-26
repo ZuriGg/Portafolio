@@ -31,9 +31,11 @@ header a {
 }
 
 header nav a {
-    font-family: "Cascadia Code", monospace;
+    /*     font-family: "Cascadia Code", monospace; */
+    font-family: "SUSE", sans-serif;
+
     color: hsl(0, 0%, 0%);
-    font-size: 1.3vh;
+    font-size: 1.2vh;
 
     text-shadow: 0px 0px 1px hsl(109, 93%, 35%), 0px 0px 1px hsl(109, 93%, 30%),
         0px 0px 1px hsl(109, 93%, 25%), 0px 0px 1px hsl(109, 93%, 20%),
@@ -81,6 +83,7 @@ header nav a {
 header nav a:hover {
     text-shadow: 0 0px 2px #000000;
     color: hsl(0, 0%, 0%);
+    transform: scale(1.1);
 }
 
 header nav a.active {
@@ -114,7 +117,7 @@ header nav a.active {
         text-shadow: 0px 0px 1px hsl(109, 93%, 35%),
             0px 0px 1px hsl(109, 93%, 30%), 0px 0px 1px hsl(109, 93%, 25%),
             0px 0px 1px hsl(109, 93%, 20%), 0px 0px 3px hsl(109, 93%, 15%);
-        font-size: 3vh;
+        font-size: 1.5vw;
         margin-right: 3vh;
         transition: all 0.3s;
     }
