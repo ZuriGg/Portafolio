@@ -326,7 +326,7 @@ header div.headerContentContainer > img.imgPerfil {
     border-radius: 2vh;
     margin: auto;
     animation: cambioSombra 5s linear infinite;
-    transition: all 3s easy-in;
+    transition: all 0.3s linear;
 }
 
 header div.headerContentContainer > img.imgPerfil:hover {
