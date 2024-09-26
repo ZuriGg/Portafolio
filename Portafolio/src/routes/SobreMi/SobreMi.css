@@ -1,6 +1,4 @@
-h2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10vw;
+.parrafoSobreMi {
+    font-size: 3vh;
+    margin: 15vh;
 }
