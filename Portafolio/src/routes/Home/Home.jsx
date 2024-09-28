@@ -1,7 +1,8 @@
 import "./Home.css";
-import Proyectos from "../../components/Main/Proyectos.jsx";
+import Proyecto from "../../components/Main/Proyecto.jsx";
 import SobreMiRedux from "../../components/Main/SobreMiRedux.jsx";
 import Tecnologias from "../../components/Main/Tecnologias.jsx";
+import { NavLink } from "react-router-dom";
 
 function Home({
     imgProyecto1,
@@ -13,7 +14,6 @@ function Home({
     imgMySql,
     imgNode,
     imgReact,
-    imgGithub,
 }) {
     return (
         <>
@@ -21,8 +21,7 @@ function Home({
             <section className="seccionProyectosDestacados">
                 <h3>Proyectos destacados</h3>
                 <div className="proyectosContainer">
-                    <Proyectos
-                        className="proyecto1"
+                    <Proyecto
                         imgProyecto={imgProyecto1}
                         nombre="Pokédex funcional"
                         descripcion=<>
@@ -31,34 +30,32 @@ function Home({
                             exprimir mis habilidades con HTML, CSS y JavaScript
                             sin el uso de ningún FrameWork.
                         </>
-                        imgGithub={imgGithub}
                         img1={imgHTML}
                         img2={imgCSS}
                         img3={imgJavaScript}
                         urlGithub="https://github.com/ZuriGg/Pokedex-funcional"
                         urlImg="https://poke-evo-lution.vercel.app/"
                     />
-                    <Proyectos
-                        className="proyecto2"
+                    <Proyecto
                         imgProyecto={imgProyecto2}
                         nombre="Diseña tu web"
                         descripcion="En proceso..."
-                        imgGithub={imgGithub}
                         img1={imgHTML}
                         img2={imgCSS}
                         img3={imgJavaScript}
                     />
-                    <Proyectos
-                        className="proyecto4"
+                    <Proyecto
                         imgProyecto={imgProyecto3}
                         nombre="Foro de Rol"
                         descripcion="En proceso..."
-                        imgGithub={imgGithub}
                         img1={imgHTML}
                         img2={imgCSS}
                         img3={imgJavaScript}
                     />
                 </div>
+                <NavLink className="nav-link" to="/proyectos">
+                    <p>Todos los proyectos...</p>
+                </NavLink>
             </section>
             <Tecnologias
                 imgMySql={imgMySql}

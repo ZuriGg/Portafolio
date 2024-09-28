@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
-import "./Proyectos.css";
+import "./Proyecto.css";
 
-function Proyectos({
+function Proyecto({
     imgProyecto,
     nombre,
     descripcion,
@@ -34,8 +34,8 @@ function Proyectos({
     };
 
     return (
-        <div className={className}>
-            <div className="cajaProyectos">
+        <div className="contenedorProyecto">
+            <div className="cajaProyecto">
                 <article>
                     <h4>{nombre}</h4>
                     <img
@@ -52,7 +52,7 @@ function Proyectos({
                     <div>
                         <h5>Tecnologías</h5>
                         <div>
-                            <div className="containerLogosProyectos">
+                            <div className="containerLogosProyecto">
                                 <img
                                     className="imgLogos"
                                     src={img1}
@@ -72,7 +72,7 @@ function Proyectos({
                                     srcSet=""
                                 />
                             </div>
-                            <div className="containerGithubProyectos">
+                            <div className="containerGithubProyecto">
                                 <a
                                     href={urlGithub}
                                     target="_blank"
@@ -80,7 +80,7 @@ function Proyectos({
                                 >
                                     <img
                                         className="imgGithub"
-                                        src={imgGithub}
+                                        src="./assets/img/gitHubLogo.png"
                                         alt=""
                                         srcSet=""
                                     />
@@ -94,4 +94,4 @@ function Proyectos({
     );
 }
 
-export default Proyectos;
+export default Proyecto;

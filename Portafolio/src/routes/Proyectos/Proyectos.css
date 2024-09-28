@@ -1,6 +1,10 @@
-h2 {
+section.seccionProyectos {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 10vw;
+    flex-wrap: wrap;
+    padding: 2vh;
+}
+
+section.seccionProyectos div.contenedorProyecto {
+    margin: auto;
+    margin-bottom: 10vh;
 }

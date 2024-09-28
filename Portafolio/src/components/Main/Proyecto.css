@@ -1,16 +1,4 @@
-section.seccionProyectosDestacados > div.proyectosContainer {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 2rem;
-    z-index: 1;
-    width: min(800px, 100%);
-    margin: auto;
-}
-
-section.seccionProyectosDestacados > div.proyectosContainer > div {
+div.contenedorProyecto {
     width: 80%;
     border-radius: 2rem;
     margin-bottom: 4rem;
@@ -30,10 +18,7 @@ section.seccionProyectosDestacados > div.proyectosContainer > div {
         inset 8px 8px 12px rgba(95, 164, 120, 0.5);
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos {
+div.contenedorProyecto div.cajaProyecto {
     width: 90%;
     padding-block: 2vh;
     position: relative;
@@ -42,11 +27,7 @@ section.seccionProyectosDestacados
     margin: auto;
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
-    article {
+div.contenedorProyecto > div.cajaProyecto article {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -73,23 +54,13 @@ section.seccionProyectosDestacados
         8px 8px 12px rgba(95, 164, 120, 0.5);
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
-    article
-    > h4 {
+div.contenedorProyecto > div.cajaProyecto article > h4 {
     font-size: 5vw;
     margin-bottom: 1vh;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
-    article
-    > img {
+div.contenedorProyecto > div.cajaProyecto article > img {
     width: 90%;
     aspect-ratio: 16/9;
     margin-left: auto;
@@ -109,44 +80,24 @@ section.seccionProyectosDestacados
         inset 8px 8px 6px rgba(95, 164, 120, 0.5);
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
-    > article
-    > img:hover {
+div.contenedorProyecto > div.cajaProyecto > article > img:hover {
     cursor: pointer;
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
-    > article
-    > img.scale-up {
-    transform: scale(1.5);
+div.contenedorProyecto > div.cajaProyecto > article > img.scale-up {
+    transform: scale(1.2);
     box-shadow: none;
     padding: 0%;
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
-    article
-    > h5 {
+div.contenedorProyecto div.cajaProyecto article h5 {
     margin-top: 2vh;
     margin-bottom: 1vh;
     font-size: 4vw;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
-    article
-    > p {
+div.contenedorProyecto div.cajaProyecto article p {
     margin-top: 1vh;
     margin-bottom: 1vh;
     padding: 2vh;
@@ -171,34 +122,17 @@ section.seccionProyectosDestacados
         8px 8px 12px rgba(95, 164, 120, 0.5);
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
-    > article
-    > p
-    > strong {
+div.contenedorProyecto > div.cajaProyecto > article > p > strong {
     font-size: 85%;
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
-    article
-    > div {
+div.contenedorProyecto > div.cajaProyecto article > div {
     position: relative;
     height: 25%;
     width: 90%;
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
-    > article
-    > div
-    > h5 {
+div.contenedorProyecto > div.cajaProyecto > article > div > h5 {
     display: flex;
     justify-content: center;
     font-size: 5vw;
@@ -206,13 +140,7 @@ section.seccionProyectosDestacados
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
-    > article
-    > div
-    > div {
+div.contenedorProyecto > div.cajaProyecto > article > div > div {
     display: flex;
     flex-direction: row;
     position: relative;
@@ -223,80 +151,68 @@ section.seccionProyectosDestacados
     margin: auto;
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
+div.contenedorProyecto
+    > div.cajaProyecto
     > article
     > div
     > div
-    > div.containerLogosProyectos {
+    > div.containerLogosProyecto {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
+div.contenedorProyecto
+    > div.cajaProyecto
     > article
     > div
     > div
-    > div.containerLogosProyectos
+    > div.containerLogosProyecto
     > img.imgLogos {
     width: 20%;
     aspect-ratio: 1/1;
     transition: all 0.4s;
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
+div.contenedorProyecto
+    > div.cajaProyecto
     > article
     > div
     > div
-    > div.containerLogosProyectos
+    > div.containerLogosProyecto
     > img.imgLogos:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
+div.contenedorProyecto
+    > div.cajaProyecto
     > article
     > div
     > div
-    > div.containerGithubProyectos {
+    > div.containerGithubProyecto {
     width: 50%;
     aspect-ratio: 1/1;
     transition: all 0.4s;
 }
 
-section.seccionProyectosDestacados
-    > div.proyectosContainer
-    > div
-    > div.cajaProyectos
+div.contenedorProyecto
+    > div.cajaProyecto
     > article
     > div
     > div
-    > div.containerGithubProyectos:hover {
+    > div.containerGithubProyecto:hover {
     transform: scale(1.2);
     cursor: pointer;
 }
 
-section.seccionProyectosDestacados
-    div.proyectosContainer
-    div
-    div.cajaProyectos
+div.contenedorProyecto
+    div.cajaProyecto
     > article
     > div
     > div
-    > div.containerGithubProyectos
+    > div.containerGithubProyecto
     a
     > img.imgGithub {
     width: 100%;
@@ -310,90 +226,38 @@ section.seccionProyectosDestacados
         font-size: 5vh;
     } */
 
-    section.seccionProyectosDestacados div.proyectosContainer {
-        position: relative;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        flex-direction: row;
-        width: 100%;
-        margin: auto;
-    }
-
-    section.seccionProyectosDestacados div.proyectosContainer > div {
+    div.contenedorProyecto {
         min-width: 400px;
         max-width: 50vh;
         margin-inline: 4vh;
     }
 
-    section.seccionProyectosDestacados
-        > div.proyectosContainer
-        > div
-        > div.cajaProyectos
-        article
-        > h4 {
+    div.contenedorProyecto > div.cajaProyecto article > h4 {
         font-size: 4vh;
     }
 
-    section.seccionProyectosDestacados
-        > div.proyectosContainer
-        > div
-        > div.cajaProyectos
-        article
-        > h5 {
+    div.contenedorProyecto > div.cajaProyecto article > h5 {
         margin-top: 1.2vh;
         margin-bottom: 0.5vh;
         font-size: 2.2vh;
     }
 
-    section.seccionProyectosDestacados
-        > div.proyectosContainer
-        > div
-        > div.cajaProyectos
-        > article
-        > div
-        > h5 {
+    div.contenedorProyecto > div.cajaProyecto > article > div > h5 {
         margin-bottom: 0.5vh;
         font-size: 3vh;
     }
 
-    /*     section.seccionProyectosDestacados div.proyectosContainer > div > div {
-        height: 30vh;
-    } */
-
-    .proyecto1 {
-        order: 2;
-    }
-    .proyecto2 {
-        order: 1;
-    }
-    .proyecto3 {
-        order: 3;
-    }
-    .proyecto4 {
-        order: 4;
-    }
-    .proyecto5 {
-        order: 3;
-    }
-    section.seccionProyectosDestacados
-        > div.proyectosContainer
-        > div
-        > div.cajaProyectos
-        article
-        > p {
+    div.contenedorProyecto > div.cajaProyecto article > p {
         font-size: 1.6vh;
         height: 15vh;
     }
 
-    section.seccionProyectosDestacados
-        > div.proyectosContainer
-        > div
-        > div.cajaProyectos
+    div.contenedorProyecto
+        > div.cajaProyecto
         > article
         > div
         > div
-        > div.containerGithubProyectos {
+        > div.containerGithubProyecto {
         width: 30%;
         aspect-ratio: 1/1;
     }

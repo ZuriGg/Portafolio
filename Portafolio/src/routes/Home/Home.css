@@ -16,8 +16,44 @@ h3 {
         0px 5px 5px hsl(0, 0%, 80%);
 }
 
+section.seccionProyectosDestacados > div.proyectosContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    z-index: 1;
+    width: min(800px, 100%);
+    margin: auto;
+}
+
+.nav-link {
+    text-decoration: none;
+}
+
+.nav-link p {
+    display: flex;
+    justify-content: center;
+    font-size: 2.5vh;
+    margin: auto;
+    margin-bottom: 3vh;
+}
+
+/* --------------------------------- MEDIA QUERY --------------------------------- */
+
 @media (min-width: 840px) {
     h3 {
         font-size: 7vh;
+    }
+
+    section.seccionProyectosDestacados div.proyectosContainer {
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 100%;
+        margin: auto;
     }
 }
