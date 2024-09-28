@@ -19,21 +19,7 @@ function Header({
                         activeclassname="active"
                         className="nav-link"
                     >
-                        Home
-                    </NavLink>
-                    <NavLink
-                        to="/contacto"
-                        activeclassname="active"
-                        className="nav-link"
-                    >
-                        Contacto
-                    </NavLink>
-                    <NavLink
-                        to="/sobre-mi"
-                        activeclassname="active"
-                        className="nav-link"
-                    >
-                        Sobre mí
+                        Portafolio
                     </NavLink>
                     <NavLink
                         to="/proyectos"
@@ -41,13 +27,6 @@ function Header({
                         className="nav-link"
                     >
                         Proyectos
-                    </NavLink>
-                    <NavLink
-                        to="/tecnologias"
-                        activeclassname="active"
-                        className="nav-link"
-                    >
-                        Tecnologías
                     </NavLink>
                     <NavLink
                         to="/documentacion"

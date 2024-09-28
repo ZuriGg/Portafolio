@@ -9,11 +9,8 @@ import Footer from "./components/Footer/Footer.jsx";
 import Nubes from "./components/FondoPantalla/Nubes.jsx";
 import Cesped from "./components/FondoPantalla/Cesped.jsx";
 
-import Contacto from "./routes/Contacto/Contacto.jsx";
 import Documentacion from "./routes/Documentacion/Documentacion.jsx";
-import SobreMi from "./routes/SobreMi/SobreMi.jsx";
 import Proyectos from "./routes/Proyectos/Proyectos.jsx";
-import Tecnologias from "./routes/Tecnologias/Tecnologias.jsx";
 
 //Imagenes
 import imgPerfil from "./assets/img/fotoPerfil2.webp";
@@ -42,14 +39,8 @@ function App() {
     useEffect(() => {
         if (location.pathname === "/") {
             document.title = "smanzano.dev";
-        } else if (location.pathname === "/contacto") {
-            document.title = "smanzano - contacto";
-        } else if (location.pathname === "/sobre-mi") {
-            document.title = "smanzano - sobre-mi";
         } else if (location.pathname === "/proyectos") {
             document.title = "smanzano - proyectos";
-        } else if (location.pathname === "/tecnologias") {
-            document.title = "smanzano - tecnologías";
         } else if (location.pathname === "/documentacion") {
             document.title = "smanzano - documentación";
         } else {
@@ -89,10 +80,7 @@ function App() {
                             />
                         }
                     />
-                    <Route path="contacto" element={<Contacto />} />
-                    <Route path="sobre-mi" element={<SobreMi />} />
                     <Route path="proyectos" element={<Proyectos />} />
-                    <Route path="tecnologias" element={<Tecnologias />} />
                     <Route path="documentacion" element={<Documentacion />} />
 
                     <Route path="*" element={<Navigate to="/" replace />} />
