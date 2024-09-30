@@ -11,7 +11,7 @@ function Tecnologias({
 }) {
     return (
         <section className="seccionTecnologias">
-            <h3>Tecnologías</h3>
+            <h2 className="tituloMain">Tecnologías</h2>
             <div className="cajaTecnologias">
                 <div className="seccionBtnTec">
                     <button>

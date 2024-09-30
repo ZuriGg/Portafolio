@@ -19,7 +19,7 @@ function Home({
         <>
             <SobreMiRedux />
             <section className="seccionProyectosDestacados">
-                <h3>Proyectos destacados</h3>
+                <h2 className="tituloMain">Proyectos destacados</h2>
                 <div className="proyectosContainer">
                     <Proyecto
                         imgProyecto={imgProyecto1}

@@ -54,7 +54,7 @@ div.contenedorProyecto > div.cajaProyecto article {
         8px 8px 12px rgba(95, 164, 120, 0.5);
 }
 
-div.contenedorProyecto > div.cajaProyecto article > h4 {
+div.contenedorProyecto > div.cajaProyecto article > h3 {
     font-size: 5vw;
     margin-bottom: 1vh;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);

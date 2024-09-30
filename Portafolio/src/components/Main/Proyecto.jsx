@@ -37,7 +37,7 @@ function Proyecto({
         <div className="contenedorProyecto">
             <div className="cajaProyecto">
                 <article>
-                    <h4>{nombre}</h4>
+                    <h3>{nombre}</h3>
                     <img
                         className={`button ${isScaled ? "scale-up" : ""}`}
                         onClick={handleLinkImg}
