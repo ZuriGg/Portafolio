@@ -90,7 +90,7 @@ div.contenedorProyecto > div.cajaProyecto > article > img.scale-up {
     padding: 0%;
 }
 
-div.contenedorProyecto div.cajaProyecto article h5 {
+div.contenedorProyecto div.cajaProyecto article h4 {
     margin-top: 2vh;
     margin-bottom: 1vh;
     font-size: 4vw;
@@ -132,7 +132,7 @@ div.contenedorProyecto > div.cajaProyecto article > div {
     width: 90%;
 }
 
-div.contenedorProyecto > div.cajaProyecto > article > div > h5 {
+div.contenedorProyecto > div.cajaProyecto > article > div > h4 {
     display: flex;
     justify-content: center;
     font-size: 5vw;
@@ -232,17 +232,17 @@ div.contenedorProyecto
         margin-inline: 4vh;
     }
 
-    div.contenedorProyecto > div.cajaProyecto article > h4 {
+    div.contenedorProyecto > div.cajaProyecto article > h3 {
         font-size: 4vh;
     }
 
-    div.contenedorProyecto > div.cajaProyecto article > h5 {
+    div.contenedorProyecto > div.cajaProyecto article > h4 {
         margin-top: 1.2vh;
         margin-bottom: 0.5vh;
         font-size: 2.2vh;
     }
 
-    div.contenedorProyecto > div.cajaProyecto > article > div > h5 {
+    div.contenedorProyecto > div.cajaProyecto > article > div > h4 {
         margin-bottom: 0.5vh;
         font-size: 3vh;
     }

@@ -47,10 +47,10 @@ function Proyecto({
                         alt=""
                         srcSet=""
                     />
-                    <h5>Descripción de proyecto:</h5>
+                    <h4>Descripción de proyecto:</h4>
                     <p>{descripcion}</p>
                     <div>
-                        <h5>Tecnologías</h5>
+                        <h4>Tecnologías</h4>
                         <div>
                             <div className="containerLogosProyecto">
                                 <img
