@@ -1,0 +1,8 @@
+User-agent: *
+Disallow: /documentacion
+Disallow: /src/
+Disallow: /assets/img/
+
+Allow: /
+
+Sitemap: https://www.smanzano.dev/sitemap.xml

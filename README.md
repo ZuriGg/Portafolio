@@ -66,50 +66,29 @@ Extras:
 -   Crear artículos (Web de apuntes full stack)
 -   Certificaciones
 -   Conocimiento de idiomas
--
-
-### Obligatorias
-
-#### HTML
-
--   HTML con accesibilidad (Descripciones en todo, descripción de página web)
--   Etiquetas para SEO de la web (Por si acaso)
--   PDF que te abra en una pagina el CV y de la opción a descargar
--
-
-#### CSS
-
--   Responsividad
--   Medias query
-
-#### JS
-
--   ni idea
 
 ### Opcionales
 
 #### HTML
 
 -   boton modo noche
--
--
--
 
 #### JS
 
 -   Modo noche
 
-## Dominio y host
-
-### Web para comprar dominio propio
-
--   https://www.arsys.es/
--   https://www.hostinger.es/comprar-dominio
-
-### Host gratuito usando github
-
--   Vercel
-
 ### Portafolio y tutorial de vercel con dominio
 
 -   https://www.fom78.com.ar/es/dominio-propio-vercel
+
+#### robots.txt
+
+-   User-agent: Especifica a qué rastreador (o "user-agent") se aplican las reglas. Puedes usar \* para aplicar las reglas a todos los bots.
+-   Disallow: Prohíbe que el bot rastree ciertas rutas o archivos específicos.
+-   Allow: Si hay alguna excepción dentro de un directorio bloqueado, puedes permitir el acceso a archivos específicos.
+-   Sitemap: Indica la ubicación de tu archivo sitemap.xml, que ayuda a los motores de búsqueda a encontrar todas las páginas importantes de tu sitio.
+
+#### sitemap.xml
+
+-   Enviar el sitemap a Google
+-
