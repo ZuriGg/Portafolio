@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
 import "./Header.css";
 import NombreIntro from "./NombreIntro.jsx";
-import Espacio from "../Espacio/Espacio.jsx";
+import Espacio from "../FondoPantalla/Espacio.jsx";
 
 function Header({
     imgPerfil,
