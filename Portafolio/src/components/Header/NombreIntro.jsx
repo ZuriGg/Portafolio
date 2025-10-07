@@ -23,9 +23,9 @@ function NombreIntro({
         <div className="headerContentContainer">
             <Link to="/">
                 <div className="nombreContainer" data-text="Sergio Manzano">
-                    <h1>Sergio Manzano</h1>
+                    <h1>Sergio Manzano Esclapez</h1>
 
-                    <h2>Full-Stack Web Developer</h2>
+                    <h2>Full-Stack Web & Mobile Developer</h2>
                 </div>
             </Link>
             <div className="contactoContainer">
@@ -74,7 +74,13 @@ function NombreIntro({
                                 alt="LinkedIn"
                             />
                         </button>
-                        <button onClick={() => handleRedirigir("/cv.pdf")}>
+                        <button
+                            onClick={() =>
+                                handleRedirigir(
+                                    "/Currículum Vitae Sergio Manzano Esclapez.pdf"
+                                )
+                            }
+                        >
                             <img
                                 className="imgLogoHeader"
                                 src={imgCV}

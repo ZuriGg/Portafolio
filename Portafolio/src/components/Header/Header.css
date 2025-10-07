@@ -10,7 +10,7 @@ header {
     margin: auto;
     padding: 1rem;
     padding-bottom: 5.5rem;
-    background: linear-gradient(to bottom, white 80%, skyblue);
+    background: linear-gradient(to bottom, rgb(0, 0, 0) 80%, skyblue);
 }
 
 /* ------- NAV ------- */
@@ -23,6 +23,8 @@ header nav {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+    z-index: 2;
 }
 
 header a {
@@ -33,7 +35,7 @@ header a {
 header nav a {
     font-family: "SUSE", sans-serif;
 
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
     font-size: 2vh;
 
     text-shadow: 0px 0px 1px hsl(109, 93%, 35%), 0px 0px 1px hsl(109, 93%, 30%),
@@ -80,13 +82,13 @@ header nav a {
 }
 
 header nav a:hover {
-    text-shadow: 0 0px 2px #000000;
+    text-shadow: 0 0px 2px #ffffff;
     color: hsl(0, 0%, 0%);
     transform: scale(1.1);
 }
 
 header nav a.active {
-    color: hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
 
     border: solid 2px;
     border-top: #00000000;

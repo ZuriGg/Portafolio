@@ -1,41 +1,37 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Nubes.css";
 
 function Nubes() {
-    const [altura, setAltura] = useState(0);
     const componenteRef = useRef(null);
-
-    const actualizarAltura = () => {
-        if (componenteRef.current) {
-            setAltura(componenteRef.current.offsetHeight);
-        }
-    };
+    const nubesRef = useRef([]);
 
     useEffect(() => {
-        actualizarAltura();
+        const altura = componenteRef.current.offsetHeight;
+        const alturaNube = 50;
+        const numNubes = Math.ceil(altura / alturaNube);
 
-        window.addEventListener("resize", actualizarAltura);
-
-        return () => {
-            window.removeEventListener("resize", actualizarAltura);
-        };
+        nubesRef.current = Array.from({ length: numNubes }).map(() => {
+            const duracion = 100 + Math.random() * 250;
+            return {
+                top: Math.random() * altura,
+                left: Math.random() * 100,
+                duracion,
+                delay: -Math.random() * duracion,
+            };
+        });
     }, []);
-
-    const alturaNube = 50;
-    const nubesArray = Array.from({ length: Math.ceil(altura / alturaNube) });
 
     return (
         <div className="contenedor-nubes" ref={componenteRef}>
-            {nubesArray.map((_, index) => (
+            {nubesRef.current.map((nube, i) => (
                 <div
-                    key={index}
+                    key={i}
                     className="nube"
                     style={{
-                        top: `${
-                            (index * alturaNube) % (altura + alturaNube)
-                        }px`,
-                        left: `${Math.random() * 100}%`,
-                        animationDuration: `${30 + Math.random() * 50}s`,
+                        top: `${nube.top}px`,
+                        left: `${nube.left}%`,
+                        animationDuration: `${nube.duracion}s`,
+                        animationDelay: `${nube.delay}s`,
                     }}
                 ></div>
             ))}

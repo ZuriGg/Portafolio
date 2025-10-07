@@ -4,7 +4,7 @@ function Footer() {
     return (
         <footer>
             <p>
-                Programado con: <span>React y CSS</span>.
+                Programado con: <span> Vite (React y JavaScript) y CSS</span>.
             </p>
             <p>
                 Codificado en: <span> Visual Studio Code</span>.

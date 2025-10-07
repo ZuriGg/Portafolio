@@ -1,18 +1,21 @@
 import { NavLink, Outlet } from "react-router-dom";
 import "./Header.css";
 import NombreIntro from "./NombreIntro.jsx";
+import Espacio from "../Espacio/Espacio.jsx";
 
 function Header({
     imgPerfil,
     imgEnviar,
     imgCopiar,
-    imgGithub,
+    imgGithubWhite,
     imgLinkedin,
     imgCV,
 }) {
     return (
         <>
             <header>
+                <Espacio />
+
                 <nav>
                     <NavLink
                         to="/"
@@ -40,7 +43,7 @@ function Header({
                     imgPerfil={imgPerfil}
                     imgEnviar={imgEnviar}
                     imgCopiar={imgCopiar}
-                    imgGithub={imgGithub}
+                    imgGithub={imgGithubWhite}
                     imgLinkedin={imgLinkedin}
                     imgCV={imgCV}
                 />

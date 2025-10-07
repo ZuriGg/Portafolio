@@ -14,6 +14,8 @@ function Home({
     imgMySql,
     imgNode,
     imgReact,
+    imgVite,
+    imgReactNative,
 }) {
     return (
         <>
@@ -61,6 +63,8 @@ function Home({
                 imgMySql={imgMySql}
                 imgNode={imgNode}
                 imgReact={imgReact}
+                imgVite={imgVite}
+                imgReactNative={imgReactNative}
                 imgHTML={imgHTML}
                 imgCSS={imgCSS}
                 imgJavaScript={imgJavaScript}
